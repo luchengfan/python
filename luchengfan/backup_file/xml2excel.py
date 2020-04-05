@@ -43,6 +43,7 @@ def parseXmlOthers(sPath,dPath,nColumn):
             cell = table.cell_value(rown,coln)
             sheet.write(rown,coln,cell)
     #Write country name
+    sPath = sPath + "   " + AddCountryName(sPath)
     sheet.write(0,nColumn,sPath)
 
     for stringName in root.findall('string'):
@@ -58,6 +59,33 @@ def iterfindfiles(path, fnexp):
     for root, dirs, files in os.walk(path):
         for filename in fnmatch.filter(files, fnexp):
             yield os.path.join(root, filename)
+
+def AddCountryName(filename_strings):
+    dict_Country={'am':'Armenian' , 'ar':'Arabic' , 'az':'Azerbaijani' , 'bg':'Bulgarian' , 'cs':'Czech',
+                  'de':'German' , 'el':'Greek' , 'es':'Spaish' , 'fa':'Farsi' , 'fr':'French', 'hr':'Croatian',
+                  'hu':'Hungarian' , 'in':'India' , 'it':'Italian' , 'iw':'Hebrew' , 'lt':'Lithuanian',
+                  'lv':'Latvian' , 'mk':'Macedonian' , 'ms':'Montserrat' , 'nl':'Dutch' , 'pl':'Polish',
+                  'pt':'Portuguese' , 'ro':'Romanian' , 'ru':'Russian' , 'sk':'Slovak' , 'sl':'Slovenian',
+                  'sq':'Albanian' , 'sr':'Serbian' , 'th':'Thai' , 'tk':'Turkmen' , 'tr':'Turkish' , 'uk':'Ukrainian',
+                  'ur':'Urdu' , 'uz':'Uzbekistan' , 'vi':'Vietnamese' , 'zh':'Chinese'}
+
+    filename_strings.strip()
+    countrylist = filename_strings.split(r'/')
+    country_str = countrylist[1]
+    if (country_str.find('-') >= 0):
+        country_temp = country_str.split(r'-')
+        countryshort = country_temp[1]
+    else: #./values/strings.xml
+        return "English"
+
+    countryshort.lower()
+    if (countryshort not in dict_Country.keys()):
+        return ""
+    else:
+        for key,value in dict_Country.items():
+            key.lower()
+            if countryshort == key:
+                return value
 
 if ( __name__ == "__main__"):
     nColumn = 2
