@@ -49,6 +49,15 @@ def modify_md5_file(md5_file):
         f.truncate()   #清空文件
         f.write(md5_file)
         f.close
+
+def make_targz(output_filename, source_dir):
+  tar = tarfile.open(output_filename,"w")
+  for root,dir,files in os.walk(source_dir):
+    for file in files:
+      pathfile = os.path.join(root, file)
+      tar.add(pathfile,arcname=os.path.join(file))
+  tar.close()
+
 original_software = sys.argv[1]
 un_tar(original_software)
 
@@ -71,6 +80,8 @@ if have_change_logo == "Y":
     original_software_array[original_software_len-12]=new_software_order_num
     original_software_array[original_software_len-3]=original_software_array[original_software_len-3]+ "_" + new_software_checksum
     new_software = "_".join(original_software_array)
+    new_software_tar = new_software + ".tar"
+    make_targz(new_software_tar,os.getcwd())
 else:
     print("please change the logo first!!")
 
