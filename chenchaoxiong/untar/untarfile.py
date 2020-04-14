@@ -3,6 +3,7 @@ import requests
 import sys
 import tarfile
 import os
+import hashlib
 
 def un_tar(file_name):
     """解压tar"""
@@ -23,6 +24,16 @@ def un_tar(file_name):
     tar.close()
     return temp_file_path
 
+def md5_cal(bin_name):
+    if os.path.isfile(bin_name):  
+        fp=open(bin_name,'rb')  
+        contents=fp.read()  
+        fp.close()
+        bin_name_md5 = hashlib.md5(contents).hexdigest()
+        return(bin_name_md5)
+    else:  
+        print('file not exists')  
+
 def file_name(file_dir):   
     for root, dirs, files in os.walk(file_dir):
         for ele in files: 
@@ -42,6 +53,7 @@ new_software_checksum=input("input new checksum:")
     os.chdir(original_software + "_files/")
     #print (os.getcwd())
     binfile = file_name(os.getcwd())
+    new_software_md5 = md5_cal(binfile)
 else:
     print("please change the logo first!!")
 
