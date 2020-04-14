@@ -27,8 +27,12 @@ original_software = sys.argv[1]
 un_tar(original_software)
 os.chdir(original_software + "_files/" )
 #print (os.getcwd())
+have_change_logo=input("if you have use tool to change logo,please input:Y:")
+if have_change_logo == "Y":
 new_software_ocs=input("input new ocs:")
 new_software_logo=input("input new logo name:")
 new_software_checksum=input("input new checksum:")
 
+else:
+    print("please change the logo first!!")
 
