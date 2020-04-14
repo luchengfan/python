@@ -6,17 +6,17 @@ import os
 
 def un_tar(file_name):
     """解压tar"""
-    print(file_name)
+    #print(file_name)
     file_name_tar = file_name + ".tar"
     tar = tarfile.open(file_name_tar)
     names = tar.getnames()
     temp_file_path = ''
     if os.path.isdir(file_name + "_files"):
-        print('文件已存在')
+        #print('file exists')
         temp_file_path = os.path.isdir(file_name + "_files")
     else:
         temp_file_path = os.mkdir(file_name + "_files")
-        print('创建一个新的文件名')
+        #print('creat a new file dir')
     #因为解压后是很多文件，预先建立同名目录
     for name in names:
         tar.extract(name, file_name + "_files/")
