@@ -54,16 +54,23 @@ un_tar(original_software)
 
 have_change_logo=input("if you have use tool to change logo,please input:Y:")
 if have_change_logo == "Y":
-new_software_ocs=input("input new ocs:")
-new_software_logo=input("input new logo name:")
-new_software_checksum=input("input new checksum:")
-
+    new_software_ocs=input("input new ocs:")
+    new_software_logo=input("input new logo name:")
+    new_software_order_num=input("input new order number:")
+    new_software_checksum=input("input new checksum:")
     os.chdir(original_software + "_files/")
     #print (os.getcwd())
     binfile = file_name(os.getcwd())
     new_software_md5 = md5_cal(binfile)
     md5_file = new_software_md5 + "  " + binfile
     modify_md5_file(md5_file)
+    original_software_array = original_software.split("_")
+    original_software_len = (len(original_software_array))
+    original_software_array[0]=new_software_ocs
+    original_software_array[original_software_len-13]=new_software_logo
+    original_software_array[original_software_len-12]=new_software_order_num
+    original_software_array[original_software_len-3]=original_software_array[original_software_len-3]+ "_" + new_software_checksum
+    new_software = "_".join(original_software_array)
 else:
     print("please change the logo first!!")
 
