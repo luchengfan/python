@@ -3,6 +3,7 @@ import requests
 import sys
 import tarfile
 import os
+import shutil
 import hashlib
 
 def un_tar(file_name):
@@ -60,13 +61,16 @@ def make_targz(output_filename, source_dir):
 
 original_software = sys.argv[1]
 un_tar(original_software)
-
+un_tar_file_dir = original_software + "_files/"
+software_xml = original_software+".xml"
 have_change_logo=input("if you have use tool to change logo,please input:Y:")
 if have_change_logo == "Y":
     new_software_ocs=input("input new ocs:")
     new_software_logo=input("input new logo name:")
     new_software_order_num=input("input new order number:")
     new_software_checksum=input("input new checksum:")
+    software_xml_dir = os.getcwd() + "/" + software_xml
+    software_xml_copy_dir = os.getcwd()+ "/"+ un_tar_file_dir + software_xml
     os.chdir(original_software + "_files/")
     #print (os.getcwd())
     binfile = file_name(os.getcwd())
@@ -82,6 +86,10 @@ if have_change_logo == "Y":
     new_software = "_".join(original_software_array)
     new_software_tar = new_software + ".tar"
     make_targz(new_software_tar,os.getcwd())
+    os.chdir("../")
+    new_software_xml = new_software + ".xml"
+    new_software_xml_copy_dir = os.getcwd()+ "/"+ un_tar_file_dir + new_software_xml
+    shutil.copy(software_xml_dir,new_software_xml_copy_dir)
 else:
     print("please change the logo first!!")
 
