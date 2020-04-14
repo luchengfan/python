@@ -41,6 +41,14 @@ def file_name(file_dir):
             if (temp_format.lstrip(".") == "bin"): 
                 return ele
         break
+
+def modify_md5_file(md5_file):
+    with open('MSD56_MD5.txt', "r+") as f:
+        read_data = f.read()
+        f.seek(0)
+        f.truncate()   #清空文件
+        f.write(md5_file)
+        f.close
 original_software = sys.argv[1]
 un_tar(original_software)
 
@@ -54,6 +62,8 @@ new_software_checksum=input("input new checksum:")
     #print (os.getcwd())
     binfile = file_name(os.getcwd())
     new_software_md5 = md5_cal(binfile)
+    md5_file = new_software_md5 + "  " + binfile
+    modify_md5_file(md5_file)
 else:
     print("please change the logo first!!")
 
