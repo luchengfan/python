@@ -23,16 +23,25 @@ def un_tar(file_name):
     tar.close()
     return temp_file_path
 
+def file_name(file_dir):   
+    for root, dirs, files in os.walk(file_dir):
+        for ele in files: 
+            temp_format = os.path.splitext(ele)[1]
+            if (temp_format.lstrip(".") == "bin"): 
+                return ele
+        break
 original_software = sys.argv[1]
 un_tar(original_software)
-os.chdir(original_software + "_files/" )
-#print (os.getcwd())
+
 have_change_logo=input("if you have use tool to change logo,please input:Y:")
 if have_change_logo == "Y":
 new_software_ocs=input("input new ocs:")
 new_software_logo=input("input new logo name:")
 new_software_checksum=input("input new checksum:")
 
+    os.chdir(original_software + "_files/")
+    #print (os.getcwd())
+    binfile = file_name(os.getcwd())
 else:
     print("please change the logo first!!")
 
