@@ -21,15 +21,32 @@ elif robot == "收集情报":
 elif robot == "梳理JIRA":
     url = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=5f4ba177-7032-41dd-ab47-26d600cb61ea"
     cmd = issues3
+elif robot == "更新改善目标":
+    url = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=6415f7fe-dd7f-498d-bd48-aaf7ce8a1197"
+    cmd = "大家今天下班之前记得更新进展到KB上哦，https://kb.cvte.com/pages/viewpage.action?pageId=170857489"
+elif robot == "更新代码数据和超期订单":
+    url = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=6415f7fe-dd7f-498d-bd48-aaf7ce8a1197"
+    cmd = "请展示代码数据和超期订单"
 else:
     url = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=5f4ba177-7032-41dd-ab47-26d600cb61ea"
     cmd = "执行报错啦,帅雄还不赶紧看下~"
-data = {
-      "msgtype": "text",
-      "text": {
-         "content": cmd,
-         "mentioned_list":["@all"],
-      }
-   }
+
+if robot == "更新代码数据和超期订单":
+  data = {
+        "msgtype": "text",
+        "text": {
+           "content": cmd,
+           "mentioned_mobile_list":["17603055151","15675124336"],
+        }
+     }
+else:
+  data = {
+        "msgtype": "text",
+        "text": {
+           "content": cmd,
+           "mentioned_list":["@all"],
+        }
+     }
+
 r = requests.post(url, headers=headers, json=data)
 print(r.text)
