@@ -1,3 +1,6 @@
+'''
+功能描述：发送邮件
+'''
 from email.mime.text import MIMEText
 import smtplib
 from email.header import Header
