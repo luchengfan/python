@@ -1,0 +1,2085 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Settings</string>
+    <string name="OPTION_PG_LV_L">OFF</string>
+    <string name="OPTION_PG_LV_3" translatable="false">3+</string>
+    <string name="OPTION_PG_LV_4" translatable="false">4+</string>
+    <string name="OPTION_PG_LV_5" translatable="false">5+</string>
+    <string name="OPTION_PG_LV_6" translatable="false">6+</string>
+    <string name="OPTION_PG_LV_7" translatable="false">7+</string>
+    <string name="OPTION_PG_LV_8" translatable="false">8+</string>
+    <string name="OPTION_PG_LV_9" translatable="false">9+</string>
+    <string name="OPTION_PG_LV_10" translatable="false">10+</string>
+    <string name="OPTION_PG_LV_11" translatable="false">11+</string>
+    <string name="OPTION_PG_LV_12" translatable="false">12+</string>
+    <string name="OPTION_PG_LV_13" translatable="false">13+</string>
+    <string name="OPTION_PG_LV_14" translatable="false">14+</string>
+    <string name="OPTION_PG_LV_15" translatable="false">15+</string>
+    <string name="OPTION_PG_LV_16" translatable="false">16+</string>
+    <string name="OPTION_PG_LV_17" translatable="false">17+</string>
+    <string name="OPTION_PG_LV_18" translatable="false">18+</string>
+
+    <string name="OPTION_PG_TH_LV_L">Unspecified</string>
+    <string name="OPTION_PG_TH_LV_4">Preschool</string>
+    <string name="OPTION_PG_TH_LV_6">Children</string>
+    <string name="OPTION_PG_TH_LV_10">General</string>
+    <string name="OPTION_PG_TH_LV_13">PG13</string>
+    <string name="OPTION_PG_TH_LV_18">PG18</string>
+    <string name="OPTION_PG_TH_LV_19">Adult</string>
+
+    <string name="INFO_TH_OFF">No Block</string>
+    <string name="INFO_PG_TH_LV_1">Block All</string>
+    <string name="INFO_PG_TH_LV_3">-</string>
+    <string name="INFO_PG_TH_LV_4">R3~5</string>
+    <string name="INFO_PG_TH_LV_5">R6~12</string>
+    <string name="INFO_PG_TH_LV_6">R6~12</string>
+    <string name="INFO_PG_TH_LV_7">G</string>
+    <string name="INFO_PG_TH_LV_8">G</string>
+    <string name="INFO_PG_TH_LV_9">G</string>
+    <string name="INFO_PG_TH_LV_10">G</string>
+    <string name="INFO_PG_TH_LV_11">R13</string>
+    <string name="INFO_PG_TH_LV_12">R13</string>
+    <string name="INFO_PG_TH_LV_13">R13</string>
+    <string name="INFO_PG_TH_LV_14">R13</string>
+    <string name="INFO_PG_TH_LV_15">R18</string>
+    <string name="INFO_PG_TH_LV_16">R18</string>
+    <string name="INFO_PG_TH_LV_17">R18</string>
+    <string name="INFO_PG_TH_LV_18">R18</string>
+    <string name="INFO_PG_TH_LV_19">R</string>
+
+    <string name="window_icon" translatable="false">Window icon</string>
+    <string name="hide" translatable="false">Hide</string>
+    <string name="close" translatable="false">Close</string>
+    <string name="corner" translatable="false">Corner</string>
+    <string name="maximize">Maximize</string>
+    <string name="str_pvr_usb_no_file">There is no pvr file in USB</string>
+    <string name="home">Home</string>
+    <string name="footballmode">Football mode</string>
+    <string name="sport_mode">Sports Mode</string>
+    <string name="back">Back</string>
+    <string name="auto">Auto</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="preference">AudioLang Preference</string>
+    <string name="preferences">Preferences</string>
+    <string name="fti">FTI</string>
+    <string name="fti_title">No programs</string>
+    <string name="freq_update">Network Frequency Update</string>
+    <string name="fti_scan_msg">Would you like to scan TV programs now?</string>
+    <string name="input_source">Source</string>
+    <string name="audio">Audio</string>
+    <string name="country">Country</string>
+    <string name="time_shift">TimeShift</string>
+    <string name="recording">Recording</string>
+    <string name="record">Record</string>
+    <string name="pause">Pause</string>
+    <string name="stop">Stop</string>
+    <string name="play">Play</string>
+    <string name="abbreviation_fast_forward">FF</string>
+    <string name="abbreviation_rewind">FB</string>
+    <string name="football_mode_default_pic_set">Stadium</string>
+    <string name="football_mode_default_sound_set">Stadium</string>
+    <string name="football_mode_default_com_set">Stadium</string>
+    <!-- Source -->
+    <string name="SOURCE_DVI1">DVI 1</string>
+    <string name="SOURCE_DVI2">DVI 2</string>
+    <string name="SOURCE_DVI3">DVI 3</string>
+    <string name="SOURCE_DVI4">DVI 4</string>
+
+    <!-- Picture -->
+    <string name="picture">Picture</string>
+    <string name="picture_backlight">Backlight</string>
+    <string name="picture_brightness">Brightness</string>
+    <string name="picture_color">Color</string>
+    <string name="picture_contrast">Contrast</string>
+    <string name="picture_sharpness">Sharpness</string>
+    <string name="picture_tint">Hue</string>
+    <string name="picture_mode">Picture Mode</string>
+    <string name="picture_dlc">DLC</string>
+    <string name="picture_dbc">DBC</string>
+    <string name="picture_hdr">HDR</string>
+
+    <string name="picture_3d_setting">3D Setting</string>
+    <string name="picture_3d_mode">3D mode</string>
+    <string name="picture_3d_frame_packing">Frame Packing</string>
+    <string name="picture_3d_side_by_side">Side By Side</string>
+    <string name="picture_3d_top_bottom">Top Bottom</string>
+    <string name="picture_3d_line_by_line">Line By Line</string>
+    <string name="picture_3d_lr_exchange">LR Exchange</string>
+    <string name="picture_3d_2d_to_3d">2D to 3D</string>
+    <string name="picture_3d_3d_to_2d">3D to 2D</string>
+    <string name="picture_3d_2d_to_3d_depth">Depth Level</string>
+
+    <string name="picture_color_temp">Color Temp</string>
+    <string name="picture_color_temp_red_gain">Red Gain</string>
+    <string name="picture_color_temp_red_offset">Red Offset</string>
+    <string name="picture_pc_horizontal_position">Horizontal Position</string>
+    <string name="picture_pc_vertical_position">Vertical Position</string>
+    <string name="picture_pc_clock_phase">Clock Phase</string>
+    <string name="picture_pc_sampling_clock">Sampling Clock</string>
+    <string name="picture_noise_reduction">Noise Reduction</string>
+    <string name="picture_aspect_ration">Aspect Ratio</string>
+
+
+    <!-- Channel -->
+    <string name="channel">Channel</string>
+    <string name="channel_atv_scan">ATV Manual Scan</string>
+    <string name="channel_dtv_scan">DTV Manual Scan</string>
+    <string name="channel_afc">AFC</string>
+    <string name="channel_scan">Scan</string>
+    <string name="channel_scan_auto">Auto Scan</string>
+    <string name="channel_lcn_v2_channel_list">Region Select</string>
+    <string name="lcn_v2_channel_list_select_timeout">Region Select TimeOut</string>
+    <string name="channel_scan_manual">Manual Scan</string>
+    <string name="channel_scan_channel_name">Channel Name</string>
+    <string name="channel_scan_manual_dvbc">Manual DVB-C Tune</string>
+    <string name="channel_scan_manual_dvbt">Manual DVB-T Tune</string>
+    <string name="channel_scan_manual_dtmb">Manual DTMB Tune</string>
+    <string name="channel_scan_manual_analog">Analog Manual Scan</string>
+    <string name="channel_scan_manual_digital">Digital Manual Scan</string>
+    <string name="channel_signal_information">Signal Information</string>
+    <string name="channel_scan_result">Found</string>
+    <string name="channel_scan_result_video">DTV</string>
+    <string name="channel_scan_result_radio">Radio</string>
+    <string name="channel_scan_result_data">Data</string>
+    <string name="channel_scan_result_atv">ATV Found</string>
+    <string name="channel_scan_result_dtv">DTV Found</string>
+    <string name="channel_scan_no_found">No channels found.</string>
+    <string name="channel_scan_frequency_name">Frequency Name</string>
+    <string name="channel_scan_signal_level">Signal Level</string>
+    <string name="channel_scan_signal_quality" >Signal Quality</string>
+    <string name="channel_scan_symbol_rate">Symbol Rate</string>
+    <string name="channel_scan_modulation">Modulation</string>
+    <string name="channel_scan_digital_channels">Digital Channels</string>
+    <string name="channel_scan_fine_tune">Fine Tune</string>
+    <string name="channel_scan_completed_msg">Auto scan completed!</string>
+    <string name="channel_scan_stop_alert_msg">Auto scan has not completed, stop now?</string>
+    <string name="channel_scan_input_channel_num_msg">Please input a channel number</string>
+    <string name="channel_frequency_setting">Frequency Setting</string>
+    <string name="channel_video_standard">Video System</string>
+    <string name="channel_color_system">Color System</string>
+    <string name="channel_sound_system">Sound System</string>
+    <string name="channel_edit">Channel Edit</string>
+    <string name="channel_edit_fav">Fav</string>
+    <string name="channel_edit_skip">Skip</string>
+    <string name="channel_edit_delete">Delete</string>
+    <string name="channel_edit_rename">Rename</string>
+    <string name="channel_edit_move">Move</string>
+    <string name="channel_edit_lock">Lock</string>
+    <string name="channel_edit_rename_msg">Please input a new name</string>
+    <string name="channel_edit_delete_confirm_msg">Are you sure to delete this channel?</string>
+    <string name="channel_edit_skip_fav_channel_msg">Cannot skip the favorite channel</string>
+    <string name="channel_edit_fav_skip_channel_msg">Cannot set the skipped channel as favorite</string>
+    <string name="channel_frequency">Frequency</string>
+    <string name="channel_frequency_MHz">Frequency(MHz)</string>
+    <string name="channel_band_width">Band Width</string>
+    <string name="channel_list">Channel List</string>
+    <string name="channel_epg">EPG</string>
+    <string name="channel_epg_go_to_program">Go To</string>
+    <string name="channel_epg_book_program">Book</string>
+    <string name="channel_epg_no_data">No Info</string>
+    <string name="channel_lcn">LCN</string>
+    <string name="channel_antenna_type">Antenna Type</string>
+    <string name="channel_search_type">Search Type</string>
+    <string name="channel_scan_type">Scan Mode</string>
+    <string name="channel_network_id">Network ID</string>
+    <string name="channel_start_scan">Start Scan</string>
+    <string name="channel_stop_scan">Stop Scan</string>
+    <string name="channel_scan_digital">Digital</string>
+    <string name="channel_scan_analog">Analog</string>
+    <string name="channel_scan_analog_digital">Analog + Digital</string>
+    <string name="channel_fav_list">Favorite List</string>
+    <string name="channel_edit_prompt_msg">Edit</string>
+    <string name="channel_ci_information">CI Information</string>
+    <string name="channel_set_pin_code">Set Pin Code</string>
+    <string name="channel_search_group_ch_num">Matching channel number</string>
+    <string name="channel_search_group_ch_name">Matching channel name</string>
+    <string name="channel_wrong_atv_frequency_msg">Invalid frequency(should be from %1$d to %2$d MHz)</string>
+    <string name="channel_locked">Channel Locked</string>
+    <string name="channel_lock_input_password_msg">Please input password</string>
+    <string name="channel_teletext">Teletext</string>
+    <string name="channel_no_teletext">No Teletext</string>
+    <string name="channel_search_no_matched">No results</string>
+    <string name="channel_epg_no_description">No program description available</string>
+    <string name="channel_list_filter">Filter</string>
+    <string name="channel_list_filter_all">ALL</string>
+    <string name="channel_list_filter_dtv">DTV</string>
+    <string name="channel_list_filter_atv">ATV</string>
+    <string name="channel_list_filter_radio">RADIO</string>
+    <string name="channel_list_filter_data">DATA</string>
+
+    <!-- Setting -->
+    <string name="setting">Setting</string>
+    <string name="setting_change_password">Change Password</string>
+    <string name="setting_input_password">Input Password</string>
+    <string name="setting_osd_language">OSD Language</string>
+    <string name="setting_osd_timer">OSD Timer</string>
+    <string name="setting_parent_control">Parental Control</string>
+    <string name="setting_hearing_impaired">Hearing Impaired</string>
+    <string name="setting_keypad_lock">Keypad Lock</string>
+    <string name="setting_system_lock">System Lock</string>
+    <string name="setting_input_source_lock">Lock Inputsource</string>
+    <string name="setting_cec">CEC</string>
+    <string name="setting_cec_setup">HDMI CEC Setup</string>
+    <string name="setting_switch_hdmicec">HDMI CEC Switch</string>
+    <string name="setting_hdmi_arc">HDMI ARC</string>
+    <string name="setting_cec_master_power_ctr">Tv Auto Power On</string>
+    <string name="setting_cec_slave_power_ctr">Device Auto Power Off</string>
+    <string name="setting_cec_slave_devices">Device List</string>
+    <string name="setting_cec_device_menu">Device Menu</string>
+    <string name="setting_audio_language">Audio Language</string>
+    <string name="setting_audio_1st_language">Audio Language 1st</string>
+    <string name="setting_audio_2nd_language">Audio Language 2nd</string>
+
+    <string name="setting_subtitle_language">Subtitle Language</string>
+    <string name="setting_subtitle">Subtitle Setting</string>
+    <string name="setting_subtitle_1st_language">Subtitle Language 1st</string>
+    <string name="setting_subtitle_2nd_language">Subtitle Language 2nd</string>
+    <string name="setting_pc_adjust">PC Adjust</string>
+    <string name="setting_system_info">System Info</string>
+    <string name="setting_system_version">System Version</string>
+    <string name="setting_app_version">APP Version</string>
+    <string name="setting_service_version">Service Version</string>
+    <string name="setting_serial_number">SN</string>
+    <string name="setting_advance_setting">Advance Setting</string>
+    <string name="setting_system_reset">System Reset</string>
+    <string name="setting_system_reset_msg">The system will be restored. Continue?</string>
+    <string name="setting_reset">Reset</string>
+    <string name="setting_resetting_msg">Resetting...</string>
+    <string name="setting_reset_msg">All previous settings will be deleted. Continue?</string>
+    <string name="setting_blue_screen">Blue Screen</string>
+    <string name="setting_game_mode">Game Mode</string>
+    <string name="setting_old_password">Old Password</string>
+    <string name="setting_new_password">New Password</string>
+    <string name="setting_confirm_password">Confirm Password</string>
+    <string name="setting_wrong_password_msg">Incorrect password, please enter again</string>
+    <string name="setting_multi_track_sound">Multi-Track Sound</string>
+    <string name="setting_eco_mode">ECO Mode</string>
+    <string name="setting_eco_mode_value_off">OFF</string>
+    <string name="setting_eco_mode_value_min">Mini</string>
+    <string name="setting_eco_mode_value_middle">Middle</string>
+    <string name="setting_eco_mode_value_max">Max</string>
+
+    <!-- Sound -->
+    <string name="sound">Sound</string>
+    <string name="sound_mode">Sound Mode</string>
+    <string name="sound_balance">Balance</string>
+    <string name="sound_bass">Bass</string>
+    <string name="sound_treble">Treble</string>
+    <string name="sound_audio_description">Audio Description</string>
+    <string name="sound_audio_description_vloume">AD Volume</string>
+    <string name="sound_video_description">Video Description</string>
+    <string name="sound_arc">ARC</string>
+    <string name="sound_surround">Surround</string>
+    <string name="sound_speaker">Speaker</string>
+    <string name="sound_power_audio">Power Audio</string>
+    <string name="sound_spdif">SPDIF</string>
+    <string name="sound_spdif_delay">SPDIF Delay</string>
+    <string name="sound_avc">AVC</string>
+    <string name="sound_audio_only">Audio Only</string>
+    <string name="sound_audio_mode_press_any_key_to_exit">The current page in a separate listening, press any key to exit</string>
+
+    <!-- Time -->
+    <string name="menu_entry_time_name">Time</string>
+    <string name="time_setting">Time Setting</string>
+    <string name="grid_time_setting">Time Setting</string>
+    <string name="time_hour">Hour</string>
+    <string name="time_minute">Minute</string>
+    <string name="time_second">Second</string>
+    <string name="timeauto">Auto Attach</string>
+    <string name="timeauto_des">auto get current time and date</string>
+    <string name="time_auto_standby_timer">Autostandby Timer</string>
+    <string name="time_sync_mode">Time SyncMode</string>
+    <string name="time_zone">Time Zone</string>
+    <string name="time_off_timer">Off Timer</string>
+    <string name="time_on_timer">On Timer</string>
+    <string name="time_sleep_timer">Sleep Timer</string>
+
+
+    <!-- Lock -->
+    <string name="lock">Lock</string>
+    <string name="lock_passwords">PassWord</string>
+    <string name="lock_changepasswords">Change Password</string>
+    <string name="lock_input_two_passwords_not_match">The two passwords you entered did not match, Please try again</string>
+    <string name="lock_change_password_fail">Fail to change password, Please try again</string>
+    <string name="lock_input_passwords_need_4_nums" translatable="false">Please enter a four-digit password</string>
+    <string name="enter_info_to_enter_password_text">Press \"Info\" to Enter Password</string>
+    <string name="enter_display_to_enter_password_text">Press \"Display\" to Enter Password</string>
+
+
+    <!-- Translations below are mapped by string id automatically, such as the TvAPI Enum -->
+    <string name="SectionTV">TV Setting</string>
+
+    <string name="OPTION_OFF">Off</string>
+    <string name="HOUR"> hour</string>
+    <string name="MIN"> min</string>
+    <string name="SECONDS"> sec</string>
+
+    <string name="ASPECT_AUTO">Auto</string>
+    <string name="ASPECT_FULL">Full</string>
+    <string name="ASPECT_16X9" translatable="false">16 : 9</string>
+    <string name="ASPECT_14X9" translatable="false">14 : 9</string>
+    <string name="ASPECT_4X3" translatable="false">4 : 3</string>
+    <string name="ASPECT_PANORAMA">Panorama</string>
+    <string name="ASPECT_DOTBYDOT">Dot By Dot</string>
+    <string name="ASPECT_SUBTITLE">Subtitle Language</string>
+    <string name="ASPECT_ZOOM1">Zoom1</string>
+    <string name="ASPECT_ZOOM2">Zoom2</string>
+    <string name="APSECT_NORMAL">Normal</string>
+    <string name="ASPECT_ZOOM">Zoom</string>
+    <string name="ASPECT_WIDE">Wide</string>
+    <string name="ASPECT_CINEMA">Cinema</string>
+
+    <string name="DLC_OFF">Off</string>
+    <string name="DLC_ON">On</string>
+    <string name="DLC_BRIGHT">Bright</string>
+    <string name="DLC_DARK">Dark</string>
+    <string name="DLC_NORMAL">Normal</string>
+
+    <string name="NR_OFF">Off</string>
+    <string name="NR_LOW">Low</string>
+    <string name="NR_MIDDLE">Middle</string>
+    <string name="NR_HIGH">High</string>
+    <string name="NR_AUTO">Auto</string>
+
+    <string name="PICTURE_FLESH_TONE_OFF">Off</string>
+    <string name="PICTURE_FLESH_TONE_LOW">Low</string>
+    <string name="PICTURE_FLESH_TONE_MIDDLE">Middle</string>
+    <string name="PICTURE_FLESH_TONE_STRONG">Strong</string>
+
+    <string name="INPUT_3D_MODE_OFF">Off</string>
+    <string name="INPUT_3D_MODE_FRAMEPACKING">Frame Packing</string>
+    <string name="INPUT_3D_MODE_SIDEBYSIDE">Side By Side</string>
+    <string name="INPUT_3D_MODE_TOPBOTTOM">Top Bottom</string>
+    <string name="INPUT_3D_MODE_LINEBYLINE">Line By Line</string>
+    <string name="INPUT_3D_MODE_AUTO">Auto</string>
+
+
+    <string name="OPTION_PREFERENCE_1">Primary</string>
+    <string name="OPTION_PREFERENCE_2">Second</string>
+    <string name="OPTION_PREFERENCE_3">Third</string>
+    <string name="OPTION_PREFERENCE_4">Fourth</string>
+    <string name="OPTION_PREFERENCE_5">Fifth</string>
+
+    <string name="WEEKDAY_MONDAY">Monday</string>
+    <string name="WEEKDAY_TUESDAY">Tuesday</string>
+    <string name="WEEKDAY_WEDNESDAY">Wednesday</string>
+    <string name="WEEKDAY_THURSDAY">Thursday</string>
+    <string name="WEEKDAY_FRIDAY">Friday</string>
+    <string name="WEEKDAY_SATURDAY">Saturday</string>
+    <string name="WEEKDAY_SUNDAY">Sunday</string>
+
+    <string name="OPTION_PICTURE_MODE_STANDARD">Standard</string>
+    <string name="OPTION_PICTURE_MODE_USER">User</string>
+    <string name="OPTION_PICTURE_MODE_DYNAMIC">Dynamic</string>
+    <string name="OPTION_PICTURE_MODE_SOFT">Soft</string>
+    <string name="OPTION_PICTURE_MODE_VIVID">Vivid</string>
+    <string name="OPTION_PICTURE_MODE_MOVIE">Movie</string>
+    <string name="OPTION_PICTURE_MODE_ENERGY_SAVING">Energy Saving</string>
+
+    <string name="OPTION_COLORTEMP_MODE_NORMAL">Normal</string>
+    <string name="OPTION_COLORTEMP_MODE_USER">User</string>
+    <string name="OPTION_COLORTEMP_MODE_WARM">Warm</string>
+    <string name="OPTION_COLORTEMP_MODE_COOL">Cool</string>
+
+    <string name="OPTION_SOUND_MODE_STANDARD">Standard</string>
+    <string name="OPTION_SOUND_MODE_USER">User</string>
+    <string name="OPTION_SOUND_MODE_CLASSIC">Classic</string>
+    <string name="OPTION_SOUND_MODE_JAZZ">Jazz</string>
+    <string name="OPTION_SOUND_MODE_POP">Pop</string>
+    <string name="OPTION_SOUND_MODE_ROCK">Rock</string>
+    <string name="OPTION_SOUND_MODE_VOICE">Voice</string>
+    <string name="OPTION_SOUND_MODE_MUSIC">Music</string>
+    <string name="OPTION_SOUND_MODE_THEATER">Theater</string>
+    <string name="OPTION_SOUND_MODE_NEWS">News</string>
+
+    <string name="SPDIF_OUT_OFF">Off</string>
+    <string name="SPDIF_OUT_RAW">RAW</string>
+    <string name="SPDIF_OUT_PCM">PCM</string>
+
+    <string name="LANGUAGE_AA">Afar</string>
+    <string name="LANGUAGE_AB">Abkhazian</string>
+    <string name="LANGUAGE_AE">Avestan</string>
+    <string name="LANGUAGE_AF">Afrikaans</string>
+    <string name="LANGUAGE_AK">Akan</string>
+    <string name="LANGUAGE_AM">Amharic</string>
+    <string name="LANGUAGE_AN">Aragonese</string>
+    <string name="LANGUAGE_AR">Arabic</string>
+    <string name="LANGUAGE_AS">Assamese</string>
+    <string name="LANGUAGE_AV">Avaric</string>
+    <string name="LANGUAGE_AY">Aymara</string>
+    <string name="LANGUAGE_AZ">Azerbaijani</string>
+    <string name="LANGUAGE_BA">Bashkir</string>
+    <string name="LANGUAGE_BE">Belarusian</string>
+    <string name="LANGUAGE_BG">Bulgarian</string>
+    <string name="LANGUAGE_BH">Bihari languages</string>
+    <string name="LANGUAGE_BI">Bislama</string>
+    <string name="LANGUAGE_BM">Bambara</string>
+    <string name="LANGUAGE_BN">Bengali</string>
+    <string name="LANGUAGE_BO">Tibetan</string>
+    <string name="LANGUAGE_BR">Breton</string>
+    <string name="LANGUAGE_BS">Bosnian</string>
+    <string name="LANGUAGE_CA">Catalan</string>
+    <string name="LANGUAGE_CE">Chechen</string>
+    <string name="LANGUAGE_CH">Chamorro</string>
+    <string name="LANGUAGE_CO">Corsican</string>
+    <string name="LANGUAGE_CR">Cree</string>
+    <string name="LANGUAGE_CS">Czech</string>
+    <string name="LANGUAGE_CU">Church Slavic</string>
+    <string name="LANGUAGE_CV">Chuvash</string>
+    <string name="LANGUAGE_CY">Welsh</string>
+    <string name="LANGUAGE_DA">Danish</string>
+    <string name="LANGUAGE_DE">German</string>
+    <string name="LANGUAGE_DV">Divehi</string>
+    <string name="LANGUAGE_DZ">Dzongkha</string>
+    <string name="LANGUAGE_EE">Ewe</string>
+    <string name="LANGUAGE_EL">Greek</string>
+    <string name="LANGUAGE_EN">English</string>
+    <string name="LANGUAGE_EO">Esperanto</string>
+    <string name="LANGUAGE_ES">Spanish</string>
+    <string name="LANGUAGE_ET">Estonian</string>
+    <string name="LANGUAGE_EU">Basque</string>
+    <string name="LANGUAGE_FA">Persian</string>
+    <string name="LANGUAGE_FF">Fulah</string>
+    <string name="LANGUAGE_FI">Finnish</string>
+    <string name="LANGUAGE_FJ">Fijian</string>
+    <string name="LANGUAGE_FO">Faroese</string>
+    <string name="LANGUAGE_FR">French</string>
+    <string name="LANGUAGE_FY">Western Frisian</string>
+    <string name="LANGUAGE_GA">Irish</string>
+    <string name="LANGUAGE_GD">Gaelic</string>
+    <string name="LANGUAGE_GL">Galician</string>
+    <string name="LANGUAGE_GN">Guarani</string>
+    <string name="LANGUAGE_GU">Gujarati</string>
+    <string name="LANGUAGE_GV">Manx</string>
+    <string name="LANGUAGE_HA">Hausa</string>
+    <string name="LANGUAGE_HE">Hebrew</string>
+    <string name="LANGUAGE_HI">Hindi</string>
+    <string name="LANGUAGE_HO">Hiri Motu</string>
+    <string name="LANGUAGE_HR">Croatian</string>
+    <string name="LANGUAGE_HT">Haitian</string>
+    <string name="LANGUAGE_HU">Hungarian</string>
+    <string name="LANGUAGE_HY">Armenian</string>
+    <string name="LANGUAGE_HZ">Herero</string>
+    <string name="LANGUAGE_IA">Interlingua</string>
+    <string name="LANGUAGE_ID">Indonesian</string>
+    <string name="LANGUAGE_IE">Interlingue</string>
+    <string name="LANGUAGE_IG">Igbo</string>
+    <string name="LANGUAGE_II">Sichuan Yi</string>
+    <string name="LANGUAGE_IK">Inupiaq</string>
+    <string name="LANGUAGE_IO">Ido</string>
+    <string name="LANGUAGE_IS">Icelandic</string>
+    <string name="LANGUAGE_IT">Italian</string>
+    <string name="LANGUAGE_IU">Inuktitut</string>
+    <string name="LANGUAGE_JA">Japanese</string>
+    <string name="LANGUAGE_JV">Javanese</string>
+    <string name="LANGUAGE_KA">Georgian</string>
+    <string name="LANGUAGE_KG">Kongo</string>
+    <string name="LANGUAGE_KI">Kikuyu</string>
+    <string name="LANGUAGE_KJ">Kuanyama</string>
+    <string name="LANGUAGE_KK">Kazakh</string>
+    <string name="LANGUAGE_KL">Kalaallisut</string>
+    <string name="LANGUAGE_KM">Central Khmer</string>
+    <string name="LANGUAGE_KN">Kannada</string>
+    <string name="LANGUAGE_KO">Korean</string>
+    <string name="LANGUAGE_KR">Kanuri</string>
+    <string name="LANGUAGE_KS">Kashmiri</string>
+    <string name="LANGUAGE_KU">Kurdish</string>
+    <string name="LANGUAGE_KV">Komi</string>
+    <string name="LANGUAGE_KW">Cornish</string>
+    <string name="LANGUAGE_KY">Kirghiz</string>
+    <string name="LANGUAGE_LA">Latin</string>
+    <string name="LANGUAGE_LB">Luxembourgish</string>
+    <string name="LANGUAGE_LG">Ganda</string>
+    <string name="LANGUAGE_LI">Limburgan</string>
+    <string name="LANGUAGE_LN">Lingala</string>
+    <string name="LANGUAGE_LO">Lao</string>
+    <string name="LANGUAGE_LT">Lithuanian</string>
+    <string name="LANGUAGE_LU">Luba-Katanga</string>
+    <string name="LANGUAGE_LV">Latvian</string>
+    <string name="LANGUAGE_MG">Malagasy</string>
+    <string name="LANGUAGE_MH">Marshallese</string>
+    <string name="LANGUAGE_MI">Maori</string>
+    <string name="LANGUAGE_MK">Macedonian</string>
+    <string name="LANGUAGE_ML">Malayalam</string>
+    <string name="LANGUAGE_MN">Mongolian</string>
+    <string name="LANGUAGE_MR">Marathi</string>
+    <string name="LANGUAGE_MS">Malay</string>
+    <string name="LANGUAGE_MT">Maltese</string>
+    <string name="LANGUAGE_MY">Burmese</string>
+    <string name="LANGUAGE_NA">Nauru</string>
+    <string name="LANGUAGE_ND">Ndebele, North</string>
+    <string name="LANGUAGE_NE">Nepali</string>
+    <string name="LANGUAGE_NG">Ndonga</string>
+    <string name="LANGUAGE_NL">Dutch</string>
+    <string name="LANGUAGE_NO">Norwegian</string>
+    <string name="LANGUAGE_NR">Ndebele, South</string>
+    <string name="LANGUAGE_NV">Navajo</string>
+    <string name="LANGUAGE_NY">Chichewa</string>
+    <string name="LANGUAGE_OC">Occitan</string>
+    <string name="LANGUAGE_OJ">Ojibwa</string>
+    <string name="LANGUAGE_OM">Oromo</string>
+    <string name="LANGUAGE_OR">Oriya</string>
+    <string name="LANGUAGE_OS">Ossetian</string>
+    <string name="LANGUAGE_PA">Panjabi</string>
+    <string name="LANGUAGE_PI">Pali</string>
+    <string name="LANGUAGE_PL">Polski</string>
+    <string name="LANGUAGE_PS">Pushto</string>
+    <string name="LANGUAGE_PT">Portuguese</string>
+    <string name="LANGUAGE_QU">Quechua</string>
+    <string name="LANGUAGE_RM">Romansh</string>
+    <string name="LANGUAGE_RN">Rundi</string>
+    <string name="LANGUAGE_RO">Romanian</string>
+    <string name="LANGUAGE_RU">Russian</string>
+    <string name="LANGUAGE_RW">Kinyarwanda</string>
+    <string name="LANGUAGE_SA">Sanskrit</string>
+    <string name="LANGUAGE_SC">Sardinian</string>
+    <string name="LANGUAGE_SD">Sindhi</string>
+    <string name="LANGUAGE_SE">Northern Sami</string>
+    <string name="LANGUAGE_SG">Sango</string>
+    <string name="LANGUAGE_SI">Sinhala</string>
+    <string name="LANGUAGE_SK">Slovak</string>
+    <string name="LANGUAGE_SL">Slovenian</string>
+    <string name="LANGUAGE_SM">Samoan</string>
+    <string name="LANGUAGE_SN">Shona</string>
+    <string name="LANGUAGE_SO">Somali</string>
+    <string name="LANGUAGE_SQ">Albanian</string>
+    <string name="LANGUAGE_SR">Serbian</string>
+    <string name="LANGUAGE_SS">Swati</string>
+    <string name="LANGUAGE_ST">Sotho, Southern</string>
+    <string name="LANGUAGE_SU">Sundanese</string>
+    <string name="LANGUAGE_SV">Swedish</string>
+    <string name="LANGUAGE_SW">Swahili</string>
+    <string name="LANGUAGE_TA">Tamil</string>
+    <string name="LANGUAGE_TE">Telugu</string>
+    <string name="LANGUAGE_TG">Tajik</string>
+    <string name="LANGUAGE_TH">Thai</string>
+    <string name="LANGUAGE_TI">Tigrinya</string>
+    <string name="LANGUAGE_TK">Turkmen</string>
+    <string name="LANGUAGE_TL">Tagalog</string>
+    <string name="LANGUAGE_TN">Tswana</string>
+    <string name="LANGUAGE_TO">Tonga (Tonga Islands)</string>
+    <string name="LANGUAGE_TR">Turkish</string>
+    <string name="LANGUAGE_TS">Tsonga</string>
+    <string name="LANGUAGE_TT">Tatar</string>
+    <string name="LANGUAGE_TW">Twi</string>
+    <string name="LANGUAGE_TY">Tahitian</string>
+    <string name="LANGUAGE_UG">Uighur</string>
+    <string name="LANGUAGE_UK">Ukrainian</string>
+    <string name="LANGUAGE_UR">Urdu</string>
+    <string name="LANGUAGE_UZ">Uzbek</string>
+    <string name="LANGUAGE_VE">Venda</string>
+    <string name="LANGUAGE_VI">Vietnamese</string>
+    <string name="LANGUAGE_VO">Volapük</string>
+    <string name="LANGUAGE_WA">Walloon</string>
+    <string name="LANGUAGE_WO">Wolof</string>
+    <string name="LANGUAGE_XH">Xhosa</string>
+    <string name="LANGUAGE_YI">Yiddish</string>
+    <string name="LANGUAGE_YO">Yoruba</string>
+    <string name="LANGUAGE_ZA">Zhuang</string>
+    <string name="LANGUAGE_ZH">Simplified Chinese</string>
+    <string name="LANGUAGE_ZH_TW">Traditional Chinese</string>
+    <string name="LANGUAGE_ZU">Zulu</string>
+    <string name="LANGUAGE_UND">Undefined</string>
+    <string name="LANGUAGE_QAA">Original</string>
+    <string name="LANGUAGE_QAB">QAB</string>
+    <string name="LANGUAGE_QAC">QAC</string>
+    <string name="LANGUAGE_NAR">NAR</string>
+    <string name="LANGUAGE_MUL">MUL</string>
+    <string name="LANGUAGE_AD_ORIGINAL">Original</string>
+    <string name="LANGUAGE_AD_NARRATIVE">Narrative</string>
+    <string name="LANGUAGE_MS_SGS">Bahasa Melayu</string>
+    <string name="LANGUAGE_ZH_SGS">Chinese</string>
+    <string name="LANGUAGE_NZI">Nzema</string>
+    <string name="LANGUAGE_DAG">Dagbani</string>
+    <string name="LANGUAGE_XSM">Kasem</string>
+    <string name="LANGUAGE_GAA">Ga</string>
+    <string name="LANGUAGE_MS_DTT">Bahasa Melayu</string>
+    <string name="LANGUAGE_ZH_DTT">Chinese</string>
+    <string name="LANGUAGE_AD_ORIGINAL_DTT">Original Audio</string>
+
+	
+    <string name="audio_language_unknow">Unknown</string>
+    <string name="audio_language_und">Undefined Subtitle</string>
+
+    <string name="SIGNAL_LOST">No Signal</string>
+    <string name="SIGNAL_UNSUPPORT">Not Support</string>
+    <string name="SIGNAL_SCRAMBLE">CH Block</string>
+    <string name="SIGNAL_NO_CI_MODULE">NO CI MODULE</string>
+    <string name="SIGNAL_LOCKED">Signal Locked</string>
+	<string name="SIGNAL_NO_AUDIO_AND_VIDEO">Invalid Service</string>
+
+    <string name="KEY_NOT_SUPPORT">Key NotSupport</string>
+    <string name="REMAINTIME_WARNING">Remain time: </string>
+    <string name="REMAINTIME_WARNING_TDS">Standby because no activity in </string>
+    <string name="press_any_key_to_exit">Press any key to cancel.</string>
+
+    <string name="NOT_AVAILABLE">Not Available</string>
+
+    <string name="TIME_SYNC_OFF">Off</string>
+    <string name="TIME_SYNC_AUTO">Auto</string>
+    <string name="TIME_SYNC_FROM_DTV_TOT_TDT">DTV</string>
+    <string name="TIME_SYNC_FROM_NTP">Network</string>
+
+    <string name="VIDEO_STANDARD_AUTO">Auto</string>
+    <string name="VIDEO_STANDARD_PAL_BGHI">PAL</string>
+    <string name="VIDEO_STANDARD_SECAM">SECAM</string>
+    <string name="VIDEO_STANDARD_PAL_N">PAL</string>
+    <string name="VIDEO_STANDARD_PAL_M">PAL</string>
+    <string name="VIDEO_STANDARD_PAL_60">PAL</string>
+    <string name="VIDEO_STANDARD_NTSC_M">NTSC</string>
+    <string name="VIDEO_STANDARD_NTSC_44">NTSC</string>
+
+    <string name="AUDIO_STANDARD_AUTO">Auto</string>
+    <string name="AUDIO_STANDARD_BG">BG</string>
+    <string name="AUDIO_STANDARD_I">I</string>
+    <string name="AUDIO_STANDARD_DK">DK</string>
+    <string name="AUDIO_STANDARD_L">L</string>
+    <string name="AUDIO_STANDARD_M">M</string>
+
+    <string name="FM_MONO">Mono</string>
+    <string name="AM_MONO">Mono</string>
+    <string name="NICAM_MONO">NICAM MONO</string>
+    <string name="BTSC_MONO">Mono</string>
+    <string name="A2_MONO">Mono</string>
+    <string name="NICAM_STEREO">NICAM Stereo</string>
+    <string name="A2_STEREO">Stereo</string>
+    <string name="BTSC_STEREO">Stereo</string>
+    <string name="NICAM_DUAL_1">NICAM Dual I</string>
+    <string name="A2_DUAL_1">Dual I</string>
+    <string name="NICAM_DUAL_2">NICAM Dual II</string>
+    <string name="A2_DUAL_2">Dual II</string>
+    <string name="NICAM_DUAL1_PLUS_DUAL2">NICAM Dual I+II</string>
+    <string name="A2_DUAL1_PLUS_DUAL2">Dual I+II</string>
+    <string name="BTSC_SAP">SAP</string>
+
+    <string name="EQ_BAND_1">100Hz</string>
+    <string name="EQ_BAND_2">350Hz</string>
+    <string name="EQ_BAND_3">1.5KHz</string>
+    <string name="EQ_BAND_4">3.5KHz</string>
+    <string name="EQ_BAND_5">10KHz</string>
+    <string name="EQ_BAND_6">Eq Band 6</string>
+    <string name="EQ_BAND_7">Eq Band 7</string>
+    <string name="EQ_BAND_8">Eq Band 8</string>
+    <string name="EQ_BAND_9">Eq Band 9</string>
+    <string name="EQ_BAND_10">Eq Band 10</string>
+
+    <string name="CHANNEL_TYPE_AUDIO">Radio</string>
+    <string name="CHANNEL_TYPE_DATA">Data</string>
+
+    <string name="ANTENNA_TYPE_AIR">Air</string>
+    <string name="ANTENNA_TYPE_CABLE">Cable</string>
+    <string name="ANTENNA_TYPE_SATELLITE">Satellite</string>
+    <string name="ANTENNA_TYPE_ALL">All</string>
+
+    <string name="TTX_CHARSET_ARABIC">Arabic</string>
+    <string name="TTX_CHARSET_FARSI">Farsi</string>
+    <string name="TTX_CHARSET_WEST">West</string>
+    <string name="TTX_CHARSET_EAST">East</string>
+    <string name="TTX_CHARSET_RUSSIAN">Russian</string>
+    <string name="TTX_CHARSET_TURKEY">Turkish</string>
+    <string name="TTX_CHARSET_UKRAINIAN">Ukrainian</string>
+    <string name="TTX_CHARSET_HEBREW">Hebrew</string>
+    <string name="TTX_CHARSET_GREEK">Greek</string>
+    <string name="TTX_CHARSET_BELARUS">Belarusian</string>
+    <!-- Translations above are mapped by string id automatically, such as the TvAPI Enum -->
+
+    <!-- Hdmi mode -->
+    <string name="picture_hdmi_mode">HDMI Mode</string>
+    <string name="picture_hdmi_auto_mode">Auto</string>
+    <string name="picture_hdmi_dvi_pc_mode">Graphic</string>
+    <string name="picture_hdmi_hdmi_mode">Video</string>
+
+    <!--OTHER-->
+    <string name="pc_auto_adjust">Auto adjust</string>
+    <string name="WifiSettings">Wi-Fi</string>
+    <string name="WirelessSettings">Wireless</string>
+    <string name="DateTimeSettings">Date &amp; time settings</string>
+    <string name="deviceInfo">Device Info</string>
+    <string name="sound_eq_setting">Equalizer</string>
+    <string name="setting_str">STR</string>
+    <string name="close_caption">Closed Caption</string>
+    <string name="screen_freeze">Freeze</string>
+    <string name="network_setting">Network Setting</string>
+    <string name="image_and_sound">Image And Sound</string>
+    <string name="common_setting">Common</string>
+    <string name="wifiNotSupport">This type of WiFi is not supported!</string>
+
+    <string name="product_info" >Product Information</string>
+    <string name="system_setting">Settings</string>
+    <string name="storage">Internal storage of information</string>
+    <string name="usedAlready">UsedSize: </string>
+    <string name="totalSize">TotalSize: </string>
+    <string name="firmware_version">Firmware version</string>
+    <string name="oad_firmware_version">OAD Firmware version</string>
+    <string name="boot_loader">Version Boot_Loader</string>
+    <string name="chip_name">platform solution</string>
+    <string name="panel_model">software configuration screen reference model</string>
+    <string name="board_model">motherboard model</string>
+    <string name="tuner_model">high-frequency head model</string>
+    <string name="hardware_version">firmware version</string>
+
+    <!-- android setting -->
+    <string name="network">Network</string>
+    <string name="timezonetitle">Time Zone</string>
+    <string name="ethernet">Ethernet</string>
+    <string name="autoip">Auto IP</string>
+    <string name="hotspotswitch">Hot Spot</string>
+    <string name="ipaddress">IP Address</string>
+    <string name="netmask">Net Mask</string>
+    <string name="gateway">Gateway</string>
+    <string name="wifi">Wi-Fi</string>
+    <string name="time">Time</string>
+    <string name="about">About</string>
+    <string name="general">General</string>
+    <string name="edit_time_new">:</string>
+    <string name="hoursetting">24 Hours</string>
+    <string name="hoursetting_des">choose 12 hours or 24 hours</string>
+    <string name="daylight_saving">Daylight Saving</string>
+    <string name="daylight_saving_des">Daylight Saving Setting</string>
+    <string name="timezone">Time Zone</string>
+    <string name="timezone_des">choose local time zone</string>
+    <string name="timeedit">Time Edit</string>
+    <string name="timeedit_des">edit current time and date</string>
+    <string name="netmode">Net Mode</string>
+    <string name="netmode_des">choose network connect mode</string>
+    <string name="wirenetwork">Wire Network</string>
+    <string name="hotpot">Hot Spot</string>
+    <string name="hotpotname">Hot Spot Name</string>
+    <string name="hotpotpassword">Hot Spot Password</string>
+    <string name="hotpotsecurity">Hot Spot Security</string>
+    <string name="sethotspotssid">Set Hot Spot Name</string>
+    <string name="wirenetwork_des">set current wire network</string>
+    <string name="wirelessnetwork">Wireless Network</string>
+    <string name="wirelessnetwork_des">set current wireless network</string>
+    <string name="networkjudge">Network Judge</string>
+    <string name="networkjudge_des">judge whether the network is normal</string>
+    <string name="systemsetting">System Setting</string>
+    <string name="langsetting">Language Setting</string>
+    <string name="langsetting_des">set current display language</string>
+    <string name="writemethod">Input Method</string>
+    <string name="writemethod_des">set current Input method</string>
+    <string name="systemupgrade">System Upgrade</string>
+    <string name="systemupgrade_des">upgrade to the newest system version</string>
+    <string name="systemrecovery">System Recovery</string>
+    <string name="systemrecovery_des">recovery system to original state</string>
+    <string name="systemrecovery_info">The operation will delete all the data of the unit and restore all the settings. Is it reset?</string>
+    <string name="systemupgrade_newest">Current Version is The Latest</string>
+    <string name="systemupgrade_hasnew">New System Version Found</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="recovery">Recovery</string>
+    <string name="date_ymd">Year / Month / Day</string>
+    <string name="date_dmy">Day / Month / Year</string>
+    <string name="date_mdy">Month / Day /Year</string>
+    <string name="dateformat">Date Format</string>
+    <string name="dateformat_des">set current date format</string>
+    <string name="language">Language</string>
+    <string name="storagespace">Storage Space</string>
+    <string name="storagespace_des">display the system storage space usage</string>
+    <string name="androidversion">Android Version</string>
+    <string name="androidversion_des">display Android version</string>
+    <string name="productionmodel">Production Model</string>
+    <string name="productionmodel_des">display production model</string>
+    <string name="wiremacaddress">Wire Net Mac Address</string>
+    <string name="wiremacaddress_des">display wire net mac address</string>
+    <string name="wirelessmacaddress">WireLess Net Mac Address</string>
+    <string name="wirelessmacaddress_des">display wireless net mac address</string>
+    <string name="colon">:</string>
+    <string name="morning">AM</string>
+    <string name="afternoon">PM</string>
+    <string name="network_mode_no_network">Disconnected</string>
+    <string name="wifi_close">Wifi Close</string>
+    <string name="wifi_enabling">Wifi Enabing</string>
+    <string name="network_mode_ethernet">Ethernet</string>
+    <string name="network_mode_wifi">Wi-Fi</string>
+    <string name="inputpassword">please input the password</string>
+    <string name="wireless">Wireless</string>
+    <string name="wirenet">Wire net</string>
+    <string name="forget">Forget</string>
+    <string name="connect">Connect</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="displaypassword">display the password</string>
+    <string name="safetystrategy">Safety Strategy</string>
+    <string name="signallevel">Signal Level</string>
+    <string name="wifi_on_text">WiFi On</string>
+    <string name="wifi_off_text">WiFi Off</string>
+
+    <string name="time_minute_short">min</string>
+    <string name="time_second_short">sec</string>
+    <string name="screen_saver_time">Screen saver time</string>
+
+    <!-- Button label to connect to a Wi-Fi network -->
+    <string name="wifi_connect">Connect</string>
+    <!-- Failured notification for connect -->
+    <string name="wifi_failed_connect_message">Failed to connect to network</string>
+    <!-- Button label to delete a Wi-Fi network -->
+    <string name="wifi_forget">Forget</string>
+    <!-- Failured notification for forget -->
+    <string name="wifi_failed_forget_message">Failed to forget network</string>
+    <!-- Button label to save a Wi-Fi network configuration -->
+    <string name="wifi_save">Save</string>
+    <!-- Failured notification for save -->
+    <string name="wifi_failed_save_message">Failed to save network</string>
+    <!-- Button label to dismiss the dialog -->
+    <string name="wifi_cancel">Cancel</string>
+
+    <!-- Do not translate.  Concise terminology for wifi with WEP security -->
+    <string name="wifi_security_short_wep">WEP</string>
+    <!-- Do not translate.  Concise terminology for wifi with WPA security -->
+    <string name="wifi_security_short_wpa">WPA</string>
+    <!-- Do not translate.  Concise terminology for wifi with WPA2 security -->
+    <string name="wifi_security_short_wpa2">WPA2</string>
+    <!-- Do not translate.  Concise terminology for wifi with both WPA/WPA2 security -->
+    <string name="wifi_security_short_wpa_wpa2">WPA/WPA2</string>
+    <!-- Do not translate.  Concise terminology for wifi with unknown PSK type -->
+    <string name="wifi_security_short_psk_generic">@string/wifi_security_short_wpa_wpa2</string>
+    <!-- Do not translate.  Concise terminology for wifi with 802.1x EAP security -->
+    <string name="wifi_security_short_eap">802.1x</string>
+
+    <!-- Used in Wi-Fi settings dialogs when Wi-Fi does not have any security. -->
+    <string name="wifi_security_none">None</string>
+
+    <!-- Do not translate.  Terminology for wifi with WEP security -->
+    <string name="wifi_security_wep">WEP</string>
+    <!-- Do not translate.  Terminology for wifi with WPA security -->
+    <string name="wifi_security_wpa">WPA PSK</string>
+    <!-- Do not translate.  Terminology for wifi with WPA2 security -->
+    <string name="wifi_security_wpa2">WPA2 PSK</string>
+    <!-- Do not translate.  Terminology for wifi with both WPA/WPA2 security, or unknown -->
+    <string name="wifi_security_wpa_wpa2">WPA/WPA2 PSK</string>
+    <!-- Do not translate.  Terminology for wifi with unknown PSK type -->
+    <string name="wifi_security_psk_generic">@string/wifi_security_wpa_wpa2</string>
+    <!-- Do not translate.  Concise terminology for wifi with 802.1x EAP security -->
+    <string name="wifi_security_eap">802.1x EAP</string>
+
+    <!-- Summary for the remembered network. -->
+    <string name="wifi_remembered">Saved</string>
+    <!-- Status for networks disabled for unknown reason -->
+    <string name="wifi_disabled_generic">Disabled</string>
+    <!-- Status for networked disabled from a DNS or DHCP failure -->
+    <string name="wifi_disabled_network_failure">Avoided poor Internet connection</string>
+    <!-- Status for networks disabled from authentication failure (wrong password
+         or certificate). -->
+    <string name="wifi_disabled_password_failure">Authentication problem</string>
+    <!-- Summary for the remembered network but currently not in range. -->
+    <string name="wifi_not_in_range">Not in range</string>
+
+    <!-- Substring of status line when Wi-Fi Protected Setup (WPS) is available and
+         string is listed first [CHAR LIMIT=20]-->
+    <string name="wifi_wps_available_first_item">WPS available</string>
+    <!-- Substring of wifi status when Wi-Fi Protected Setup (WPS) is available and
+         string is listed after a wifi_secured_* string-->
+    <!-- Substring of wifi status for wifi with authentication.  This version is for when the
+         string is first in the list (titlecase in english) -->
+    <!-- Substring of wifi status for wifi with authentication.  This version is for when the
+         string is not first in the list (lowercase in english) -->
+    <!-- Toast message when Wi-Fi cannot scan for networks -->
+    <string name="wifi_fail_to_scan">Can\'t scan for networks</string>
+    <string name="wifi_scanning">Scanning</string>
+
+    <!-- Wifi hidden hotspot connect -->
+    <string name="ssid">SSID</string>
+    <string name="wifi_hidden_save">Save</string>
+    <string name="chiper_type">ChiperType</string>
+    <string name="wifi_hidden">Add hotspot</string>
+    <string name="wifi_ssid_null">SSID is empty</string>
+    <string name="wifi_password_null">Password is empty</string>
+
+
+    <!-- Network -->
+    <string name="label_ip_address">IP Address</string>
+    <string name="label_network_mode">Network Mode</string>
+    <string name="label_ethernet_setting">Ethernet Setting</string>
+    <string name="label_wifi_setting">Wi-Fi Setting</string>
+    <string name="label_auto_ip">Auto get IP address</string>
+    <string name="label_net_mask">Net Mask</string>
+    <string name="label_gateway">Gateway</string>
+    <string name="label_dns">DNS</string>
+    <string name="title_ip_address">IP Address</string>
+    <string name="title_net_mask">Net Mask</string>
+    <string name="title_gateway">Gateway</string>
+    <string name="title_dns">DNS</string>
+    <string name="title_network_config">Network Config</string>
+    <string name="value_no_network">Disconnected</string>
+    <string name="value_connect_ok">Connected</string>
+    <string name="originversion">Old Version</string>
+    <string name="newversion">New Version</string>
+    <string name="disconnectforget">Disconnect and Forget</string>
+    <string name="empty_apk_install_tip1">Sorry! No wifi signal was found.</string>
+    <string name="upgradedesc">Upgrade Description</string>
+    <string name="value_wifi_signal_excellent">Excellent</string>
+    <string name="value_wifi_signal_bad">bad</string>
+    <string name="value_wifi_signal_normal">normal</string>
+    <string name="value_wifi_signal_good">good</string>
+
+    <string name="more_settings">More Settings</string>
+    <string name="corevolume">CoreVolume</string>
+    <string name="corevolume_des">Display the Core Volume of the System</string>
+    <string name="cpu">CPU</string>
+    <string name="cpu_des">Display the CPU Info</string>
+    <string name="ram">RAM</string>
+    <string name="ram_des">Display the RAm Info</string>
+    <string name="systemversion">System Version</string>
+    <string name="systemversion_des">Display System Version</string>
+    <string name="gpu">GPU</string>
+    <string name="gpu_des">Display the GPU Info</string>
+    <string name="paneltype">Panel Type</string>
+    <string name="paneltype_des">Display the Panel Type</string>
+    <string name="graphicsengine">Graphics engine</string>
+    <string name="graphicsengine_des">Display the Graphics engine</string>
+    <string name="panelresolution">Panel Resolution</string>
+    <string name="panelresolution_des">Display the Panel Resolution</string>
+    <string name="networksystem">Network System</string>
+    <string name="networksystem_des">Display the Network System</string>
+    <string name="hdmi">HDMI Info</string>
+    <string name="hdmi_des">display HDMI Info</string>
+
+    <string name="string_corevolume">Six nuclear</string>
+    <string name="string_corevolume_12">4Cores A7 1GHz  GPU:4 x SG x 544  VPU:4Cores</string>
+    <string name="string_cpu">Cortex-A9 1.5GHz Quad core</string>
+    <string name="string_cpu_A7">Cortex-A7 1GH Quad core</string>
+    <string name="string_gpu_SG">4 x SG x 544</string>
+    <string name="string_gpu">Mali400 Dual core</string>
+    <string name="string_ram">DDR3  1600MHz</string>
+    <string name="string_paneltype">SAMSUNG  A+</string>
+    <string name="string_graphicsengine">Six Super Beautiful</string>
+    <string name="string_panelresolution">1920x1080p</string>
+    <string name="string_networksystem">100/1000MLAN/Inner Wifi</string>
+    <string name="string_hdmi">3840*2160 2160P input</string>
+    <string name="string_suffix_i">I</string>
+    <string name="string_suffix_p">P</string>
+    <!-- wifi hotspot -->
+    <string name="hotspot">Wi-fi Hotspot</string>
+    <string name="hotspot_des">open or set wi-fi hotspot</string>
+    <string name="wpa2">WPA2 PSK</string>
+    <string name="wpa">WPA PSK</string>
+    <string name="open">OPEN</string>
+    <string name="password">Password</string>
+    <string name="hotspotname">Hotspot Name</string>
+    <string name="hotspotpassword">Hotspot Password</string>
+    <string name="hotspot_rename">rename wi-fi hotspot</string>
+
+    <!-- bluetooth -->
+    <string name="bluetooth">Bluetooth</string>
+    <string name="bluetooth_des">open or connect bluetooth devices</string>
+    <string name="bluetooth_enable">Bluetooth Enable</string>
+    <string name="bluetooth_search">Search Connectable Devices</string>
+    <string name="bluetooth_detectable">my device can be detected by nearby devices</string>
+    <string name="connected">Connected</string>
+    <string name="matched">Matched</string>
+    <string name="notconnected">Not Connected</string>
+    <string name="bluetooth_connect_setting">Bluetooth Connect Setting</string>
+    <string name="dismatch">Cancel Match</string>
+    <string name="connectdevice">Connect Device</string>
+    <string name="matchconnect">Match and Connect</string>
+
+    <string name="bluetooth_enable_alphanumeric_pin">PIN contains letters or symbols</string>
+    <string name="bluetooth_pin_values_hint">Usually 0000 or 1234</string>
+    <string name="bluetooth_pairing_accept">Pair</string>
+    <string name="bluetooth_pairing_decline">Cancel</string>
+    <string name="bluetooth_notif_ticker">Bluetooth pairing request</string>
+    <string name="bluetooth_notif_title">Pairing request</string>
+    <string name="bluetooth_notif_message" translatable="false">Touch to pair with <xliff:g id="device_name">%1$s</xliff:g>.</string>
+
+    <!--user protocol-->
+    <string name="userprotocol">User Protocol</string>
+    <string name="userprotocol_des">a protocol about our production for users</string>
+
+    <!--Account-->
+    <string name="accountmanage">Account Manage</string>
+    <string name="delete">Delete</string>
+    <string name="accountmanage_des">Display and Manage User Account</string>
+    <string name="noaccount_desc">Cannot find any effective Account</string>
+    <string name="ifdeleteaccount">Delete this account</string>
+
+
+    <string name="notify_password_length">the hotport password length should be more than eight</string>
+
+    <string name="systemcountry">Country</string>
+    <string name="systemcountry_des">choose country</string>
+
+    <string name="connect_to_ap">connect to AP</string>
+    <string name="api">API Version</string>
+    <string name="app_unknown_install">Unknown app installation</string>
+
+    <string name="welcome_to_use">Welcome to use &#160;</string>
+    <string name="internet_tv">Internet Smart Cloud TV</string>
+    <string name="setting_promt">For your enjoyment of viewing content, we need to do some simple settings</string>
+    <string name="chose_language">Select the language you are using</string>
+    <string name="chose_country">Select the country you are using</string>
+    <string name="chose_retail">Select the mode you preferred</string>
+    <string name="chose_time_zone">Select the time zone you are using</string>
+    <string name="start_setting">Start the setup</string>
+    <string name="tv_assistant">Connect the TV Assistant</string>
+    <string name="fti_network_entry">Home page</string>
+    <string name="fti_network_shop">Shop page</string>
+    <string name="fti_scan_channel_entry">TV</string>
+    <string name="fti_setting_network">Set your TV network</string>
+    <string name="fti_setting_network_no_wired">Wired network is not detected. Please check and insert the network cable or use the wireless network.
+        If you want to set the network later, press the right direction key to skip</string>
+    <string name="fti_setting_network_wired">A wired network has been detected and connected successfully. You can watch videos, download apps, and enjoy more!</string>
+    <string name="using_wifi">Use a wireless network</string>
+
+    <string name="tv_guide_title">TV viewing guide</string>
+    <string name="tv_guide_text_tip">Please choose the way you watch TV programs or source, start to experience it!</string>
+    <string name="fti_loading">The boot setting is active</string>
+
+    <string name="fti_assistant_scan">The scanning 2D code downloads the mobile end</string>
+    <string name="screen_aspect_ratio_description">Select the appropriate zoom mode</string>
+    <string name="picture_color_temp_description" >Select your preferred color temperature</string>
+    <string-array name="fti_assistant_foreign">
+        <item>Mobile phone remote control, in control</item>
+        <item>Video playback, easy to share</item>
+        <item>Local push, convenient and quick</item>
+    </string-array>
+    <string-array name="fti_assistant_china">
+        <item>Mobile phone remote control, in control</item>
+        <item>Online video, a push button</item>
+        <item>Application management, convenient and quick</item>
+        <item>Voice control, subversion imagination</item>
+    </string-array>
+    <string name="fti_set_password">Set Password</string>
+    <string name="memory_calculating_size">calculating...</string>
+    <string name="inner_storage_detail_information">Details of the internal storage disks</string>
+    <string name="inner_storage_information">Internal storage of information</string>
+
+    <!--CI List-->
+    <string name="ci_list_title">CI1 list</string>
+    <string name="ci_list_delete">delete</string>
+    <string name="channel_ci_insert">CI card is inserted</string>
+    <string name="channel_ci_removed">CI card removed</string>
+    <string name="title_loading_ci">Loading...</string>
+    <string name="delete_ci_list">Delete CI list</string>
+    <string name="delete_ci_listView">Are you sure you want to delete this CI list??</string>
+    <string name="cancel_delete_text">Cancel</string>
+    <string name="confirm_delete_text">Confirm</string>
+
+    <string name="headset_plug_in">Headphone plugged in, other audio output methods are invalid!</string>
+    <string name="headset_plug_out">Headphone have plugged out</string>
+
+    <!--add-->
+    <string name="search_blue_booth_devices_nearBy">Search for nearby connectable devices</string>
+    <string name="search_devives_could_connect">Search for connectable devices</string>
+    <string name="title_about_add_bluetooth_remote_control">Add a bluetooth remote control</string>
+    <string name="title_about_law_infomation">Legal information</string>
+    <string name="title_about_timing">Timing</string>
+    <string name="title_about_infomation">Information</string>
+    <string name="title_about_sound_advanve">Sound Advanced</string>
+    <string name="title_about_picture_advanve">Image Advanced</string>
+    <string name="title_about_picture">Image</string>
+    <string name="title_about_network_infomation">Network information</string>
+    <string name="title_about_connection">connection</string>
+    <string name="title_about_network_check">Detection</string>
+    <string name="title_about_system">System</string>
+    <string name="title_about_just_advance">Advance</string>
+    <string name="title_about_blueTooth_infomation">Information</string>
+    <string name="title_about_this_machine">About this machine</string>
+    <string name="text_title_about_wlan_accessPoint">WLAN hotspots</string>
+    <string name="text_sub_title_about_wlan_access">Turn on or set your TV WiFi hotspot</string>
+    <string name="text_about_wlan_accessPoint_open_close">Hotspot M828 is enabled</string>
+    <string name="text_about_tv_app_infomation">Displays the TV software version information</string>
+    <string name="text_sub_title_about_tv_CPU">Displays the number of processor cores of the native device</string>
+    <string name="text_title_about_tv_CPU">Number of processor cores</string>
+    <string name="text_about_input_method">Google Pinyin input method</string>
+    <string name="text_get_about_device_name">Living room TV</string>
+    <string name="text_title_about_device_name">The device name</string>
+    <string name="text_sub_title_about_choose_or_edit_deviceName">Select or customize the device name</string>
+    <string name="switch_sub_title_about_black_light">Turns the dynamic backlight switch on or off</string>
+    <string name="switch_title_about_black_light">Dynamic backlight switch</string>
+    <string name="switch_sub_title_about_update_system">Turns system updates on or off</string>
+    <string name="switch_sub_title_about_blue_screen">Turns the blue screen background on or off</string>
+    <string name="switch_sub_title_about_blue_tooth">Turns the Bluetooth function on or off</string>
+    <string name="switch_get_title_about_blue_tooth">Bluetooth function</string>
+    <string name="switch_sub_title_about_check_bluetooth_device">A nearby Bluetooth device can detect this device</string>
+    <string name="switch_sub_title_about_bluetooth_deviceName">M828</string>
+    <string name="switch_sub_title_about_audio_surround">Turn the surround switch on or off</string>
+    <string name="switch_sub_title_about_keyDown_sound">Turns the key sound on or off</string>
+    <string name="switch_get_title_about_keyDown_sound">Key sound</string>
+    <string name="spinner_sub_title_about_choose_numSound_out">Select the desired digital audio output</string>
+    <string name="spinner_get_titlt_about_screen_paper_time">The screen saver displays the time</string>
+    <string name="spinner_sub_title_about_screen_paper_time">Sets the display time for the screen saver to go to sleep</string>
+    <string name="spinner_sub_title_about_reduce_voice">Select the noise reduction level</string>
+    <string name="spinner_sub_title_about_choose_loveColor">Select the preferred dynamic contrast ratio</string>
+    <string name="spinner_sub_title_about_choose_lovePmode">Select the desired image mode</string>
+    <string name="setting_hdmi_device_not_found">No HDMI device found</string>
+    <string name="setting_sub_title_about_choose_speaker_state">Turn the speaker on or off</string>
+
+    <string name="entry_title_about_detect_connection">Network detection</string>
+    <string name="entry_sub_title_about_inner_outer_connection">Detection of internal and external network connection status</string>
+    <string name="entry_title_about_detect_connection_speed">Network speed</string>
+    <string name="entry_sub_title_about_connection_speed">Detect network speed, and recommend a viewable video clarity</string>
+    <string name="text_button_sub_entry_text_about_core">Core</string>
+    <string name="fragment_title_about_select_input_method">Set Current Input Method</string>
+
+    <string name="total_size_calculation">Total: Calculating</string>
+    <string name="system_using_size">System: </string>
+    <string name="picture_using_size">Photo: </string>
+    <string name="music_using_size">Music: </string>
+    <string name="video_using_size">Video: </string>
+    <string name="other_using_size">Other: </string>
+    <string name="grid_title_about_HDMI_option">HDMI CEC</string>
+
+    <!--Changed here-->
+    <string name="already_used_calculation">Used: Calculating</string>
+    <string name="app_using_size">Application: </string>
+    <string name="available_size">Available Size: </string>
+    <string name="bluetooth_and_devices" >Bluetooth And Devices</string>
+    <string name="entry_title_about_menu_reset_option">Menu Reset</string>
+    <string name="grid_title_about_common_option">Common</string>
+    <string name="bluetooth_paired_device">Paired Devices</string>
+    <string name="bluetooth_can_use_device">Found Devices</string>
+    <string name="bluetooth_paired">Paired</string>
+    <string name="bluetooth_connect_failed">Connect Failed</string>
+    <string name="bluetooth_disconnect">Disconnect</string>
+    <string name="bluetooth_unpair">Cancel Paired</string>
+    <string name="bluetooth_pair">Pair</string>
+    <string name="bluetooth_connection">Bluetooth Device Connect</string>
+    <string name="bluetooth_discovery_finish" >Bluetooth Discovery Finished</string>
+    <string name="bluetooth_discovery_start" >Bluetooth Discovery Started</string>
+    <string name="bluetooth_bond_failed" >Pairing Failed</string>
+    <string name="title_about_audio_only_notice">Audio Only Notice</string>
+    <string name="message_about_audio_only_notice">Are you sure to open Audio Only Mode?</string>
+    <string name="option_menu_reset_title">Menu Reset</string>
+    <string name="hdmi_edid_ver">4K Enhanced</string>
+
+    <string name="checking_net_state_now">Checking Network Status</string>
+    <string name="checking_net_state_over">Network Status Checked Over</string>
+    <string name="dns_connection_state">DNS Parser Status</string>
+    <string name="dns_connection_state_failed">DNS Parser Is Normal</string>
+    <string name="dns_connection_state_success">DNS Parser Is AbNormal</string>
+    <string name="inner_connection_state">Internal Network Connection Status</string>
+    <string name="inner_connection_state_failed">Internal Network Connection Is Abnormal</string>
+    <string name="inner_connection_state_success">Internal Network Connection Is Normal</string>
+    <string name="outer_connection_state">Extranet Network Connection Status</string>
+    <string name="outer_connection_state_failed">Extranet Network Connection Is Abnormal</string>
+    <string name="outer_connection_state_success">Extranet Network Connection is Normal</string>
+    <string name="switch_title_nosingal_stand_by">No Signal StandBy</string>
+
+    <string name="ethernet_connect_successfully">Ethernet Connect Success</string>
+    <string name="input_no_passward">No Password Set</string>
+    <string name="connecting_wifi_now">Connecting WiFi Now</string>
+    <string name="openning_wifi_for_user">Enabling WiFi Now,Please Wait</string>
+    <string name="connection_wifi_ap_error">WiFi Validation Error</string>
+    <string name="wifi_connect_failed">WiFi Connected Failed</string>
+    <string name="wifi_connect_successfully">WiFi Connected Successfully</string>
+    <string name="attempt_connecting_configurated_net">Trying To Connect Configured Network</string>
+
+    <string name="picture_film_mode">Film Mode</string>
+    <string name="sytem_no_single_poweroff">No Signal Power Off</string>
+    <!-- For Record Style -->
+    <string name="str_textview_record_title">Record Setting</string>
+    <string name="str_textview_record_chaneel_name">record channel name</string>
+    <string name="str_textview_record_sbutitle">record subtitle</string>
+    <string name="str_textview_record_context">record</string>
+    <string name="str_textview_record_mode">record mode</string>
+    <string name="str_textview_record_start_time">start time</string>
+    <string name="str_textview_record_end_time">end time</string>
+    <string name="str_record_date">date</string>
+    <string name="str_record_month">month</string>
+    <string name="str_record_hour">hour</string>
+    <string name="str_record_minute">minute</string>
+    <string name="str_tasklist">Schedule List</string>
+    <string name="recordtime">Record Time:</string>
+    <string name="str_free_space">Free Space:</string>
+    <string name="record_exit">Stop Record</string>
+    <string name="timeshift_exit">Stop Timeshift</string>
+    <string name="playback_exit">Stop Playback</string>
+    <string name="record_list">Record List</string>
+    <string name="pvr_setting">PVR Setting</string>
+    <string name="pvr_usb_selector">Select Disk</string>
+    <string name="pvr_Record">PVR Record</string>
+    <string name="remind">Remind</string>
+    <string name="delete_Recode_file_confirm">Confirm to delete this file?</string>
+
+
+    <!-- For schedule list style -->
+    <string name="str_textview_schedule_list_title">Schedule list</string>
+    <string name="str_textview_schedule_list_time">time</string>
+    <string name="str_textview_schedule_list_date">date</string>
+    <string name="str_schedule_list_channel_name">channel name</string>
+    <string name="str_schedule_list_programmer_title">programmer</string>
+    <string name="str_pvr_file_system_title">PVR File System</string>
+    <string name="str_pvr_file_system_select_disk">Select Disk</string>
+    <string name="str_pvr_file_system_time_shift_size">Time Shift Size</string>
+    <string name="str_pvr_file_system_format_start">Format Start</string>
+    <string name="str_pvr_file_system_format_context">Success</string>
+    <string name="str_pvr_file_system_speed_check">Speed Check</string>
+    <string name="str_pvr_file_system_speed_context">complete</string>
+    <string name="str_pvr_file_system_always_timeshift">Always Timeshift</string>
+    <string name="str_pvr_file_system_always_context">On</string>
+    <string name="delete_recode_task_confirm">Confirm to delete this schedule?</string>
+    <string name="delete_recode_task_title">Delete Schedule</string>
+    <string name="str_pvr_start_record">Start Record</string>
+    <string name="str_pvr_schedule_remind">Schedule Remind</string>
+    <string name="str_pvr_begin_in_start_schedule_channel">Your schedule channel is about to begin</string>
+    <string name="str_pvr_are_you_going">are you going?</string>
+    <string name="str_pvr_enter">Enter</string>
+    <string name="str_pvr_cancel">Canel</string>
+    <string name="str_pvr_format">Format</string>
+    <string name="str_pvr_format_diskette">Format Diskette</string>
+    <string name="str_pvr_format_config_prompt">Format diskette will erase all data, are you sure?</string>
+    <string name="str_pvr_formating">"Formt Devices Doing"</string>
+    <string name="str_pvr_unplugdevice_warnning">"Don't unplug the Device"</string>
+
+    <!-- for pvr full page browser -->
+    <string name="str_pvr_lcn_textview">LCN</string>
+    <string name="str_pvr_channel_textview">CHANNEL</string>
+    <string name="srt_pvr_program_service_textview">ProgramService</string>
+    <string name="str_pvr_program_service_tips_red">Replay</string>
+    <string name="str_pvr_program_service_tips_green">Delete one</string>
+    <string name="str_pvr_program_service_tips_descend">Descend</string>
+    <string name="str_pvr_program_service_tips_blue">Zoom</string>
+    <string name="str_pvr_program_service_tips_yellow">Delete All</string>
+    <string name="str_pvr_lcn_title">Title</string>
+    <string name="str_pvr_lcn_record_data">Record Data:</string>
+    <string name="str_pvr_lcn_data">2011-11-25</string>
+
+    <string name="str_no_sinal">no signal</string>
+    <string name="str_pvr_listview_item">pvr listview item</string>
+    <string name="str_pvr_playback_error_reason">Can\'t PlayBack Properly, the Reason is:\n</string>
+    <string name="str_pvr_usb_removed">USB REMOVED</string>
+
+    <string name="str_pvr_format_usb">pvr usb format</string>
+    <string name="str_pvr_format_usb_progressing">Format USB Disk Progressing...\nPlease Do Not Unplug the
+        USB Disk!</string>
+    <string name="str_pvr_usb_speed_test_progressing">pvr usb speed test progressing</string>
+    <string name="str_pvr_program_saving">pvr program saving</string>
+    <string name="str_pvr_exit_confirm">pvr exit confirm</string>
+    <string name="str_pvr_is_recording">pvr is recording</string>
+    <string name="str_editText1">00</string>
+    <string name="str_pvr_unsurpt_flsystem">Unsupported File System,Please Do Format First!</string>
+    <string name="str_pvr_is_standby">Standby</string>
+    <string name="str_pvr_tip">Are you going to stop pvr recording, or go to standby recording?</string>
+    <string name="str_pvr_tip2">Are you going to stop pvr recording?</string>
+    <string name="str_pvr_abloop_too_short">The AB Loop time is too short, the shortest time is 2 seconds</string>
+    <string name="str_pvr_record_fail">record fail</string>
+    <string name="str_pvr_alwaystimeshift_record_fail">Always time shift record fail</string>
+    <string name="str_pvr_no_usb">No USB Detected</string>
+    <string name="str_pvr_disk_read_only">Disk read only</string>
+    <string name="str_pvr_out_of_space">Out Of Disk Space</string>
+    <string name="str_pvr_data_only">Can not record data only channel</string>
+    <string name="str_pvr_scrambled_program">Scrambled Program</string>
+    <string name="str_pvr_ch_blocked">CH Blocked</string>
+    <string name="str_pvr_rating_blocked">Rating Blocked</string>
+    <string name="str_pvr_retention_expired">Retention Limit Expired</string>
+    <string name="str_pvr_vod_not_allow">VOD content not allow to record</string>
+    <string name="str_pvr_ciplus_copy_protection">CI+ URI Protection</string>
+    <string name="str_pvr_ciplus_unsupport">CI+ Unsupport</string>
+    <string name="str_pvr_ginga_running">Ginga running</string>
+    <string name="str_pvr_bad_video_audio">bad video audio</string>
+    <string name="str_pvr_max_recording_reached">Max recording count reached</string>
+    <string name="str_pvr_mehg5_data_only">MEHG5 data only program</string>
+    <string name="str_pvr_success">Success</string>
+
+    <string name="str_pvr_feature_not_avilable">Feature Not available!</string>
+    <string name="str_pvr_ubknow_src">Unknow SRC !</string>
+    <string name="str_pvr_feature_not_support">Feature not support !</string>
+    <string name="str_pvr_av_not_available">AV stream not available !</string>
+    <string name="str_pvr_staream_not_authorized">Stream not authorized!</string>
+    <string name="str_pvr_input_lock">Input locked !</string>
+    <string name="str_pvr_disk_not_ready">Disk not ready!</string>
+    <string name="str_pvr_no_enough_free_space">There is no enough free space!</string>
+    <string name="str_pvr_wait_timeshift_prepare">Please wait tshift prepare completed!</string>
+    <string name="str_pvr_error">Error</string>
+
+
+
+    <string name="str_pvr_overwrite_before">Timeshift will overwrite</string>
+    <string name="str_pvr_still_check_disk">Processing, please wait...</string>
+    <string name="str_pvr_usb_storage_off">USB storage off</string>
+    <string name="str_pvr_file_demaged">The current file can not be played because it has been damaged, to play the current program instead</string>
+    <string name="str_shedule_is_full">The SheduleTask count is full,please delete some!!</string>
+    <string name="channel_epg_next_day">Next Day</string>
+    <string name="channel_epg_pre_day">Previous Day</string>
+    <string name="enter_input_stop_pvr">Enter Input ,now Stop Pvr !</string>
+    <string name="function_not_available">The function requested is not available now</string>
+
+    <string name="str_reminder_mode">Mode</string>
+    <string name="str_reminder_date">date</string>
+    <string name="str_reminder_month">month</string>
+    <string name="str_reminder_hour">hour</string>
+    <string name="str_reminder_minute">minute</string>
+    <string name="str_record_date_start">start date</string>
+    <string name="str_record_month_start">start month</string>
+    <string name="str_record_hour_start">start hour</string>
+    <string name="str_record_minute_start">start minute</string>
+    <string name="str_record_date_end">end date</string>
+    <string name="str_record_month_end">end month</string>
+    <string name="str_record_hour_end">end hour</string>
+    <string name="str_record_minute_end">end minute</string>
+    <string name="str_reminder_channel">Channel</string>
+    <string name="str_start_time">Start Time</string>
+    <string name="str_end_time">End time</string>
+    <string name="str_record_end_time">End date</string>
+    <string name="str_start_hour">Start Time</string>
+    <string name="str_end_hour">End time</string>
+    <string name="str_reminder_auto">Auto</string>
+    <string name="str_reminder_once">Once</string>
+    <string name="str_reminder_daily">Daily</string>
+    <string name="str_reminder_weekly">Weekly</string>
+    <string name="str_reminder_title">Reminder Setting</string>
+    <string name="str_reminder_record_event">Record this event</string>
+    <string name="str_zero">0</string>
+    <string name="str_colon">:</string>
+    <string name="str_1_plus_1">1+1</string>
+    <string name="enter_enter_to_edit">Press \"Enter\" or \"OK\" to Edit</string>
+    <string name="enter_enter_to_back">Press \"Enter\" or \"OK\" to Back</string>
+    <string name="str_pvr_used">Used</string>
+    <string name="create_tshift_file_fail">"Create file failed"</string>
+    <string name="create_tshift_file_success">"Create file success, waiting to start"</string>
+    <string name="create_tshift_file">"In the create TimeShfit file,Please wait..."</string>
+
+
+    <!-- country start -->
+    <string name="COUNTRY_AD">Andorra</string>
+    <string name="COUNTRY_AE">Arabia United Arab Emirates</string>
+    <string name="COUNTRY_AF">Afghanistan</string>
+    <string name="COUNTRY_AG">Antigua and Barbuda</string>
+    <string name="COUNTRY_AI">Anguilla</string>
+    <string name="COUNTRY_AL">Albania</string>
+    <string name="COUNTRY_AM">Armenia</string>
+    <string name="COUNTRY_AO">Angola</string>
+    <string name="COUNTRY_AR">Argentina</string>
+    <string name="COUNTRY_AT">Austria</string>
+    <string name="COUNTRY_AU">Australia</string>
+    <string name="COUNTRY_AZ">Azerbaijan</string>
+    <string name="COUNTRY_BB">Barbados</string>
+    <string name="COUNTRY_BD">Bangladesh</string>
+    <string name="COUNTRY_BE">Belgium</string>
+    <string name="COUNTRY_BF">Burkina Faso</string>
+    <string name="COUNTRY_BG">Bulgaria</string>
+    <string name="COUNTRY_BH">Bahrain</string>
+    <string name="COUNTRY_BI">Burundi</string>
+    <string name="COUNTRY_BJ">Benin</string>
+    <string name="COUNTRY_BM">Bermuda</string>
+    <string name="COUNTRY_BN">Brunei</string>
+    <string name="COUNTRY_BO">Bolivia</string>
+    <string name="COUNTRY_BR">Brazil</string>
+    <string name="COUNTRY_BS">Bahamas</string>
+    <string name="COUNTRY_BW">Botswana</string>
+    <string name="COUNTRY_BY">Belarus</string>
+    <string name="COUNTRY_BZ">Belize</string>
+    <string name="COUNTRY_CA">Canada</string>
+    <string name="COUNTRY_CF">China</string>
+    <string name="COUNTRY_CG">Congo-Brazzaville</string>
+    <string name="COUNTRY_CH">Switzerland</string>
+    <string name="COUNTRY_CK">Cook Islands</string>
+    <string name="COUNTRY_CL">Chile</string>
+    <string name="COUNTRY_CM">Cameroon</string>
+    <string name="COUNTRY_CN">China</string>
+    <string name="COUNTRY_CO">Colombia</string>
+    <string name="COUNTRY_CR">Costa Rica</string>
+    <string name="COUNTRY_CU">Cuba</string>
+    <string name="COUNTRY_CY">Cyprus</string>
+    <string name="COUNTRY_CZ">Czechia</string>
+    <string name="COUNTRY_DE">Germany</string>
+    <string name="COUNTRY_DJ">Djibouti</string>
+    <string name="COUNTRY_DK">Denmark</string>
+    <string name="COUNTRY_DO">Republic of Dominica</string>
+    <string name="COUNTRY_DZ">Algeria</string>
+    <string name="COUNTRY_EC">Ecuador</string>
+    <string name="COUNTRY_EE">Estonia</string>
+    <string name="COUNTRY_EG">Egypt</string>
+    <string name="COUNTRY_ES">Spain</string>
+    <string name="COUNTRY_ET">Ethiopia</string>
+    <string name="COUNTRY_FI">Finland</string>
+    <string name="COUNTRY_FJ">Fiji</string>
+    <string name="COUNTRY_FR">France</string>
+    <string name="COUNTRY_GA">Gabon</string>
+    <string name="COUNTRY_GB">UK</string>
+    <string name="COUNTRY_GD">Grenada</string>
+    <string name="COUNTRY_GE">Georgia</string>
+    <string name="COUNTRY_GF">French Guiana</string>
+    <string name="COUNTRY_GH">Ghana</string>
+    <string name="COUNTRY_GI">Gibraltar</string>
+    <string name="COUNTRY_GM">Gambia</string>
+    <string name="COUNTRY_GN">Guinea</string>
+    <string name="COUNTRY_GR">Greece</string>
+    <string name="COUNTRY_GT">Guatemala</string>
+    <string name="COUNTRY_GU">Guam</string>
+    <string name="COUNTRY_GY">Guyana</string>
+    <string name="COUNTRY_HK">Hongkong</string>
+    <string name="COUNTRY_HN">Honduras</string>
+    <string name="COUNTRY_HR">Croatia</string>
+    <string name="COUNTRY_HT">Haiti</string>
+    <string name="COUNTRY_HU">Hungary</string>
+    <string name="COUNTRY_ID">Indonesia</string>
+    <string name="COUNTRY_IE">Ireland</string>
+    <string name="COUNTRY_IL">Israel</string>
+    <string name="COUNTRY_IN">India</string>
+    <string name="COUNTRY_IQ">Iraq</string>
+    <string name="COUNTRY_IR">Iran</string>
+    <string name="COUNTRY_IS">Iceland</string>
+    <string name="COUNTRY_IT">Italy</string>
+    <string name="COUNTRY_JM">Jamaica</string>
+    <string name="COUNTRY_JO">Jordan</string>
+    <string name="COUNTRY_JP">Japan</string>
+    <string name="COUNTRY_KE">Kenya</string>
+    <string name="COUNTRY_KG">Kyrgyzstan</string>
+    <string name="COUNTRY_KH">Kampuchea</string>
+    <string name="COUNTRY_KP">Korea</string>
+    <string name="COUNTRY_KR">Korea</string>
+    <string name="COUNTRY_KW">Kuwait</string>
+    <string name="COUNTRY_KZ">Kazakhstan</string>
+    <string name="COUNTRY_LA">Lao</string>
+    <string name="COUNTRY_LB">Lebanon</string>
+    <string name="COUNTRY_LC">Lucia</string>
+    <string name="COUNTRY_LI">Liechtenstein</string>
+    <string name="COUNTRY_LK">Sri Lanka</string>
+    <string name="COUNTRY_LR">Liberia</string>
+    <string name="COUNTRY_LS">Lesotho</string>
+    <string name="COUNTRY_LT">Lithuania</string>
+    <string name="COUNTRY_LU">Luxemburg</string>
+    <string name="COUNTRY_LV">Latvia</string>
+    <string name="COUNTRY_LY">Libya</string>
+    <string name="COUNTRY_MA">Morocco</string>
+    <string name="COUNTRY_MC">Monaco</string>
+    <string name="COUNTRY_MD">Moldova</string>
+    <string name="COUNTRY_MG">Madagascar</string>
+    <string name="COUNTRY_ML">Mali</string>
+    <string name="COUNTRY_MM">Burma</string>
+    <string name="COUNTRY_MN">Mongolia</string>
+    <string name="COUNTRY_MO">Macao</string>
+    <string name="COUNTRY_MS">Montserrat</string>
+    <string name="COUNTRY_MT">Malta</string>
+    <string name="COUNTRY_MU">Mauritius</string>
+    <string name="COUNTRY_MV">Maldives</string>
+    <string name="COUNTRY_MW">Malawi</string>
+    <string name="COUNTRY_MX">Mexico</string>
+    <string name="COUNTRY_MY">Malaysia</string>
+    <string name="COUNTRY_MZ">Mozambique</string>
+    <string name="COUNTRY_NA">Namibia</string>
+    <string name="COUNTRY_NE">Niger</string>
+    <string name="COUNTRY_NG">Nigeria</string>
+    <string name="COUNTRY_NI">Nicaragua</string>
+    <string name="COUNTRY_NL">Holland</string>
+    <string name="COUNTRY_NO">Norway</string>
+    <string name="COUNTRY_NP">Nepal</string>
+    <string name="COUNTRY_NR">Nauru</string>
+    <string name="COUNTRY_NZ">New Zealand</string>
+    <string name="COUNTRY_OM">Oman</string>
+    <string name="COUNTRY_PA">Panama</string>
+    <string name="COUNTRY_PE">Peru</string>
+    <string name="COUNTRY_PF">French Polynesia</string>
+    <string name="COUNTRY_PG">Papua New Guinea</string>
+    <string name="COUNTRY_PH">Philippines</string>
+    <string name="COUNTRY_PK">Pakistan</string>
+    <string name="COUNTRY_PL">Poland</string>
+    <string name="COUNTRY_PR">Puerto Rico</string>
+    <string name="COUNTRY_PT">Portugal</string>
+    <string name="COUNTRY_PY">Paraguay</string>
+    <string name="COUNTRY_QA">Qatar</string>
+    <string name="COUNTRY_RE">Reunion</string>
+    <string name="COUNTRY_RO">Romania</string>
+    <string name="COUNTRY_RU">Russia</string>
+    <string name="COUNTRY_SA">Arabia</string>
+    <string name="COUNTRY_SB">Solomon Islands</string>
+    <string name="COUNTRY_SC">Seychelles</string>
+    <string name="COUNTRY_SD">Sultan</string>
+    <string name="COUNTRY_SE">Sweden</string>
+    <string name="COUNTRY_SG">Singapore</string>
+    <string name="COUNTRY_SI">Slovenia</string>
+    <string name="COUNTRY_SK">Slovakia</string>
+    <string name="COUNTRY_SL">Sierra Leone</string>
+    <string name="COUNTRY_SM">San Marino</string>
+    <string name="COUNTRY_SN">Senegal</string>
+    <string name="COUNTRY_SO">Somalia</string>
+    <string name="COUNTRY_SR">Suriname</string>
+    <string name="COUNTRY_ST">Sao Tome and Principe</string>
+    <string name="COUNTRY_SV">EL Salvador</string>
+    <string name="COUNTRY_SY">Syria</string>
+    <string name="COUNTRY_SZ">Swaziland</string>
+    <string name="COUNTRY_TD">Chad</string>
+    <string name="COUNTRY_TG">Togo</string>
+    <string name="COUNTRY_TH">Thailand</string>
+    <string name="COUNTRY_TJ">Tajikistan</string>
+    <string name="COUNTRY_TM">Turkmenistan</string>
+    <string name="COUNTRY_TN">Tunisia</string>
+    <string name="COUNTRY_TO">Tonga</string>
+    <string name="COUNTRY_TR">Turkey</string>
+    <string name="COUNTRY_TT">Trinidad and Tobago</string>
+    <string name="COUNTRY_TW">Taiwan Province</string>
+    <string name="COUNTRY_TZ">Tanzania</string>
+    <string name="COUNTRY_UA">Ukraine</string>
+    <string name="COUNTRY_UG">Uganda</string>
+    <string name="COUNTRY_US">United States</string>
+    <string name="COUNTRY_UY">Uruguay</string>
+    <string name="COUNTRY_UZ">Uzbekistan</string>
+    <string name="COUNTRY_VC">St. Vincent island</string>
+    <string name="COUNTRY_VE">Venezuela</string>
+    <string name="COUNTRY_VN">Vietnam</string>
+    <string name="COUNTRY_YE">Yemen</string>
+    <string name="COUNTRY_YU">Yugoslavia</string>
+    <string name="COUNTRY_ZA">South Africa</string>
+    <string name="COUNTRY_ZM">Zambia</string>
+    <string name="COUNTRY_ZR">Zaire</string>
+    <string name="COUNTRY_ZW">Zimbabwe</string>
+    <string name="COUNTRY_CI">Cote d\'Ivoire</string>
+    <string name="COUNTRY_RS">Serbia</string>
+    <string name="COUNTRY_MK">Macedonia</string>
+    <string name="COUNTRY_ME">Montenegro</string>
+    <string name="COUNTRY_CD">Congo-Kinshasa</string>
+
+    <string name="DVBC_SCAN_TYPE_FAST">Network</string>
+    <string name="DVBC_SCAN_TYPE_QUICK">Quick</string>
+    <string name="DVBC_SCAN_TYPE_FULL">Full</string>
+    <string name="DVBC_SCAN_TYPE_BLIND">Blind</string>
+
+    <string name="MODULATION_AUTO">@string/auto</string>
+    <string name="MODULATION_16QAM">16QAM</string>
+    <string name="MODULATION_32QAM">32QAM</string>
+    <string name="MODULATION_64QAM">64QAM</string>
+    <string name="MODULATION_128QAM">128QAM</string>
+    <string name="MODULATION_256QAM">256QAM</string>
+
+    <string name="DVBS_MODULATION_QPSK">QPSK</string>
+    <string name="DVBS_MODULATION_8PSK">8PSK</string>
+    <string name="DVBS_MODULATION_16APSK">16APSK</string>
+    <string name="DVBS_MODULATION_32APSK">32APSK</string>
+    <string name="DVBS_MODULATION_OTHER">Modulation Other</string>
+    <string name="user_policy_title" translatable="true">Terms and Conditions, Privacy Policy</string>
+    <string name="user_policy_agree" translatable="true">Agree</string>
+    <string name="user_policy_dicline" translatable="true">Decline</string>
+    <string name="user_policy_confirm" translatable="true">Confirm</string>
+
+    <string-array name="str_arr_pvr_error_code">
+        <item>@string/str_pvr_success</item>
+        <item>@string/str_pvr_no_usb</item>
+        <item>@string/str_pvr_unsurpt_flsystem</item>
+        <item>@string/str_pvr_disk_read_only</item>
+        <item>@string/str_pvr_out_of_space</item>
+        <item>@string/str_pvr_success</item>
+        <item>@string/str_pvr_ciplus_copy_protection</item>
+        <item>@string/str_pvr_scrambled_program</item>
+        <item>@string/str_pvr_ciplus_unsupport</item>
+        <item>@string/str_pvr_data_only</item>
+        <item>@string/str_no_sinal</item>
+        <item>@string/str_pvr_out_of_space</item>
+        <item>@string/str_pvr_ginga_running</item>
+        <item>@string/str_pvr_bad_video_audio</item>
+        <item>@string/str_pvr_retention_expired</item>
+        <item>@string/str_pvr_ch_blocked</item>
+        <item>@string/str_pvr_rating_blocked</item>
+        <item>@string/str_pvr_max_recording_reached</item>
+        <item>@string/str_pvr_mehg5_data_only</item>
+        <item>@string/str_pvr_vod_not_allow</item>
+        <item>@string/str_pvr_error</item>
+        <item>@string/str_pvr_still_check_disk</item>
+        <item>@string/str_pvr_usb_storage_off</item>
+        <item>@string/str_pvr_file_demaged</item>
+        <item>@string/str_pvr_usb_no_file</item>
+        <item>@string/str_pvr_feature_not_avilable</item>
+        <item>@string/str_pvr_ubknow_src</item>
+        <item>@string/str_pvr_feature_not_support</item>
+        <item>@string/str_pvr_av_not_available</item>
+        <item>@string/str_pvr_staream_not_authorized</item>
+        <item>@string/str_pvr_input_lock</item>
+        <item>@string/str_pvr_disk_not_ready</item>
+        <item>@string/str_pvr_no_enough_free_space</item>
+        <item>@string/str_pvr_wait_timeshift_prepare</item>
+
+    </string-array>
+    <string-array name="str_arr_epg_time_check_display_info">
+        <item>None</item>
+        <item>Success</item>
+        <item>Past</item>
+        <item>Overlay</item>
+        <item>Endtime before start</item>
+        <item>Endtime exceed period</item>
+        <item>Full</item>
+        <item>New reminder conflict</item>
+        <item>DB reminder conflict</item>
+        <item>The recording time is at least two minutes</item>
+        <item>StartTime need to exceed system time(two minutes)</item>
+        <item>Error</item>
+    </string-array>
+
+    <!-- For epg Genre-->
+    <string name="str_genre_movie">Movie</string>
+    <string name="str_genre_movie_drama">Movie/Drama</string>
+    <string name="str_genre_movie_drama_general">Movie/Drama(general)</string>
+    <string name="str_genre_news">News</string>
+    <string name="str_genre_news_factual">News and Factual</string>
+    <string name="str_genre_news_current_default">Current Affairs</string>
+    <string name="str_genre_news_current_general">News/Current Affairs(general)</string>
+    <string name="str_genre_news_current">News/Current Affairs</string>
+    <string name="str_genre_entertainment">Entertainment</string>
+    <string name="str_genre_show_general">Show/Game Show(general)</string>
+    <string name="str_genre_show">Show/Game Show</string>
+    <string name="str_genre_sports_general">Sports(general)</string>
+    <string name="str_genre_sport">Sport</string>
+    <string name="str_genre_chidren">Children\'s</string>
+    <string name="str_genre_youth">Children\'s/Youths programmes</string>
+    <string name="str_genre_music_default">Music</string>
+    <string name="str_genre_music_general">Music/Ballet/Dance(general)</string>
+    <string name="str_genre_music">Music/Ballet/Dance</string>
+    <string name="str_genre_art_general">Arts/Culture(without music, general)</string>
+    <string name="str_genre_art">Art/Culture(without music)</string>
+    <string name="str_genre_social_general">Social/Political Issues/Economics(general)</string>
+    <string name="str_genre_social">Social/Political Issues/Economics</string>
+    <string name="str_genre_education_default">Education/Information</string>
+    <string name="str_genre_education_uk">Education</string>
+    <string name="str_genre_education_others_general">Education/Science/Factual Topics(general)</string>
+    <string name="str_genre_education_others">Education/Science/Factual Topics</string>
+    <string name="str_genre_infotainment">Infotainment</string>
+    <string name="str_genre_life_uk">Lifestyle</string>
+    <string name="str_genre_life">Leisure Hobbis</string>
+    <string name="str_genre_not_support">Not Supported</string>
+    <string name="str_genre_original_language">Original Language</string>
+    <string name="str_genre_special">Special</string>
+    <string name="str_genre_special_characteristics">Special Characteristics</string>
+    <string name="str_genre_reserved">Reserved For Future Use</string>
+    <string name="str_genre_drama">Drama</string>
+    <string name="str_genre_user_defined">User Defined</string>
+    <string name="str_genre_undefined">Undefined</string>
+    <string name="str_genre_unclassified">Unclassified</string>
+    <string name="str_genre_comedy">Comedy</string>
+    <string name="str_genre_documentary">Documentary</string>
+    <string name="str_genre_soap_brizal">Soap opera</string>
+    <string name="str_genre_mini_series_brizal">Mini-series</string>
+    <string name="str_genre_series_brizal">Series</string>
+    <string name="str_genre_variety_brizal">Variety</string>
+    <string name="str_genre_reality_show_brizal">Reality show</string>
+    <string name="str_genre_information_brizal">Information</string>
+    <string name="str_genre_comical_brizal">Comical</string>
+    <string name="str_genre_erotic_brizal">Erotic</string>
+    <string name="str_genre_raffle_tv_sales_prizing_brizal">Raffle/Television sales/Prizing</string>
+    <string name="str_genre_debate_interview_brizal">Debate/Interview</string>
+    <string name="str_genre_other_brizal">Other</string>
+
+     <!-- CC settings -->
+    <string name="setting_ccsettings">CC Settings</string>
+    <string name="cc_cc_mode">CC Mode</string>
+    <string name="cc_basic_selection">Basic Selection</string>
+    <string name="cc_advanced_selection">Advanced Selection</string>
+    <string name="cc_advanced_setting">Advanced Setting</string>
+    <string name="cc_advanced_mode">Caption Style</string>
+    <string name="cc_font_style">Font Style</string>
+    <string name="cc_font_size">Font Size</string>
+    <string name="cc_font_edge_style">Window Style</string>
+    <string name="cc_font_edge_color">Window Color</string>
+    <string name="cc_FG_color">Font Color</string>
+    <string name="cc_BG_color">Background Color</string>
+    <string name="cc_FG_opacity">Font Opacity</string>
+    <string name="cc_BG_opacity">Background Opacity</string>
+    <string name="cc_italic">Italic</string>
+    <string name="cc_underline">Underline</string>
+    <string-array name="str_arr_epg_genre_uk">
+        <item>@string/str_genre_unclassified</item>
+        <item>@string/str_genre_movie_drama</item>
+        <item>@string/str_genre_news_factual</item>
+        <item>@string/str_genre_entertainment</item>
+        <item>@string/str_genre_sport</item>
+        <item>@string/str_genre_chidren</item>
+        <item>@string/str_genre_entertainment</item>
+        <item>@string/str_genre_life</item>
+        <item>@string/str_genre_drama</item>
+        <item>@string/str_genre_education_uk</item>
+        <item>@string/str_genre_life_uk</item>
+        <item>@string/str_genre_not_support</item>
+        <item>@string/str_genre_not_support</item>
+        <item>@string/str_genre_not_support</item>
+        <item>@string/str_genre_not_support</item>
+        <item>@string/str_genre_drama</item>
+    </string-array>
+    <string-array name="str_arr_epg_genre_nz">
+        <item>@string/str_genre_undefined</item>
+        <item>@string/str_genre_movie_drama_general</item>
+        <item>@string/str_genre_news_current_general</item>
+        <item>@string/str_genre_show_general</item>
+        <item>@string/str_genre_sports_general</item>
+        <item>@string/str_genre_youth</item>
+        <item>@string/str_genre_music_general</item>
+        <item>@string/str_genre_art_general</item>
+        <item>@string/str_genre_social_general</item>
+        <item>@string/str_genre_education_others_general</item>
+        <item>@string/str_genre_life</item>
+        <item>@string/str_genre_original_language</item>
+        <item>@string/str_genre_reserved</item>
+        <item>@string/str_genre_reserved</item>
+        <item>@string/str_genre_reserved</item>
+        <item>@string/str_genre_user_defined</item>
+    </string-array>
+    <string-array name="str_arr_epg_genre_au">
+        <item>@string/str_genre_unclassified</item>
+        <item>@string/str_genre_movie</item>
+        <item>@string/str_genre_news</item>
+        <item>@string/str_genre_entertainment</item>
+        <item>@string/str_genre_sport</item>
+        <item>@string/str_genre_chidren</item>
+        <item>@string/str_genre_music_default</item>
+        <item>@string/str_genre_art</item>
+        <item>@string/str_genre_news_current_default</item>
+        <item>@string/str_genre_education_default</item>
+        <item>@string/str_genre_infotainment</item>
+        <item>@string/str_genre_special</item>
+        <item>@string/str_genre_comedy</item>
+        <item>@string/str_genre_drama</item>
+        <item>@string/str_genre_documentary</item>
+    </string-array>
+    <string-array name="str_arr_epg_genre_brizal">
+        <item></item>
+        <item>@string/str_genre_news</item>
+        <item>@string/str_genre_sports_general</item>
+        <item>@string/str_genre_education_uk</item>
+        <item>@string/str_genre_soap_brizal</item>
+        <item>@string/str_genre_mini_series_brizal</item>
+        <item>@string/str_genre_series_brizal</item>
+        <item>@string/str_genre_variety_brizal</item>
+        <item>@string/str_genre_reality_show_brizal</item>
+        <item>@string/str_genre_information_brizal</item>
+        <item>@string/str_genre_comical_brizal</item>
+        <item>@string/str_genre_chidren</item>
+        <item>@string/str_genre_erotic_brizal</item>
+        <item>@string/str_genre_movie</item>
+        <item>@string/str_genre_raffle_tv_sales_prizing_brizal</item>
+        <item>@string/str_genre_debate_interview_brizal</item>
+        <item>@string/str_genre_other_brizal</item>
+        <item></item>
+    </string-array>
+    <string-array name="str_arr_epg_genre_default">
+        <item>@string/str_genre_unclassified</item>
+        <item>@string/str_genre_movie_drama</item>
+        <item>@string/str_genre_news_current</item>
+        <item>@string/str_genre_show</item>
+        <item>@string/str_genre_sport</item>
+        <item>@string/str_genre_youth</item>
+        <item>@string/str_genre_music</item>
+        <item>@string/str_genre_art</item>
+        <item>@string/str_genre_social</item>
+        <item>@string/str_genre_education_others</item>
+        <item>@string/str_genre_life</item>
+        <item>@string/str_genre_special_characteristics</item>
+        <item>@string/str_genre_reserved</item>
+        <item>@string/str_genre_reserved</item>
+        <item>@string/str_genre_reserved</item>
+        <item>@string/str_genre_user_defined</item>
+    </string-array>
+    <string name="channel_scan_channel_num" translatable="false">Channel Number</string>
+    <string name="no_pvr_file" >no PVR file </string>
+    <string name="the_password_limit" >The number of  you entered exceeded the limit! </string>
+
+    <!-- ATSC VChip settings -->
+    <string name="block_unrated_tv">Block Unrated TV</string>
+    <string name="usa_parental_control">USA Parental Set</string>
+    <string name="canadian_parental_control">Canada Parental Set</string>
+    <string name="rrt5_setting">RRT5 Setting</string>
+    <string name="reset_rrt5">Reset RRT5</string>
+    <string name="reset_confirm_msg">Are you sure to reset RRT5?</string>
+    <!-- lock wuguitong add -->
+    <string name="str_vchip_usa_parental_control">USA Parental Control</string>
+    <!-- for USA Parental Control -->
+    <string name="usa_movie_ratings">Movie Ratings</string>
+    <string name="usa_movie_ratings_none">None</string>
+    <string name="usa_movie_ratings_g">G</string>
+    <string name="usa_movie_ratings_pg">PG</string>
+    <string name="usa_movie_ratings_pg_13">PG-13</string>
+    <string name="usa_movie_ratings_r">R</string>
+    <string name="usa_movie_ratings_nc_17">NC-17</string>
+    <string name="usa_movie_ratings_x">X</string>
+    <string name="usa_movie_ratings_nr">NR</string>
+    <string name="usa_tv_ratings">TV Ratings</string>
+    <string name="usa_tv_ratings_none">None</string>
+    <string name="usa_tv_ratings_tv_y">TV-Y</string>
+    <string name="usa_tv_ratings_tv_y7">TV-Y7</string>
+    <string name="usa_tv_ratings_tv_g">TV-G</string>
+    <string name="usa_tv_ratings_tv_pg">TV-PG</string>
+    <string name="usa_tv_ratings_tv_14">TV-14</string>
+    <string name="usa_tv_ratings_tv_ma">TV-MA</string>
+    <string name="usa_tv_ratings_tv_title_all">ALL</string>
+    <string name="usa_tv_ratings_tv_title_fv">FV</string>
+    <string name="usa_tv_ratings_tv_title_l">L</string>
+    <string name="usa_tv_ratings_tv_title_s">S</string>
+    <string name="usa_tv_ratings_tv_title_v">V</string>
+    <string name="usa_tv_ratings_tv_title_d">D</string>
+    <string name="contentdescription">null</string>
+
+    <string name="setting_store_mode" translatable="false">Store Mode</string>
+    <string name="setting_retail_mode" translatable="false">Retail Mode</string>
+    <string name="setting_home_mode" translatable="false">Home Mode</string>
+    <string name="setting_environment" >Environment</string>
+    <string name="retail_mode_prompt_1" >Are you sure you select retail mode?</string>
+    <string name="retail_mode_prompt_2" >Home mode default setting are recommended for in-home use,ENERGY STAR@ qualified.retail mode is intended for in-store display</string>
+    <string name="retail_mode_prompt_3" >TV is currently in Retail mode.Do you wish to continue the Retail mode?</string>
+    <string name="description_find_usb">Find new USB device</string>
+    <string name="description_myfun">Whether to enter Media Center or not ?</string>
+    <string name="description_ok">Ok</string>
+    <string name="description_cancle">Cancel</string>
+    <string name="myfun_uninstall">Media application is not been installed.</string>
+    <!-- for Canadian Parental Control -->
+    <string name="str_vchip_canadian_parental_control">Canadian Parental Control</string>
+    <string name="setting_canadian_parental_locks_on">ON</string>
+    <string name="setting_canadian_parental_locks_off">OFF</string>
+    <string name="setting_canadian_parental_locks_english_titles">English</string>
+    <string name="setting_canadian_parental_locks_french_titles">French</string>
+    <string-array name="canadian_english_titles">
+        <item>E</item>
+        <item>C</item>
+        <item>C8+</item>
+        <item>G</item>
+        <item>PG</item>
+        <item>14+</item>
+        <item>18+</item>
+    </string-array>
+    <string-array name="canadian_french_titles">
+        <item>E</item>
+        <item>G</item>
+        <item>8 ans+</item>
+        <item>13 ans+</item>
+        <item>16 ans+</item>
+        <item>18 ans+</item>
+    </string-array>
+    <string-array name="close_caption" translatable="false">
+        <item>Off</item>
+        <item>CC1</item>
+        <item>CC2</item>
+        <item>CC3</item>
+        <item>CC4</item>
+        <item>Text1</item>
+        <item>Text2</item>
+        <item>Text3</item>
+        <item>Text4</item>
+    </string-array>
+
+    <string-array name="digital_close_caption" translatable="false">
+        <item>Off</item>
+        <item>SERVICE1</item>
+        <item>SERVICE2</item>
+        <item>SERVICE3</item>
+        <item>SERVICE4</item>
+        <item>SERVICE5</item>
+        <item>SERVICE6</item>
+    </string-array>
+
+
+    <string-array name="digital_close_caption_isdb" translatable="false">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+
+    <string name="permission_manage">Permission Manage</string>
+    <string name="ECO_OFF">Off</string>
+    <string name="ECO_LOW">Low</string>
+    <string name="ECO_MID">Medium</string>
+    <string name="ECO_HIGH">High</string>
+    <!-- for ginga tv -->
+    <string name="GinGa_switch">Ginga</string>
+    <string name="GinGa_Application">Auto Start Application</string>
+    <string name="GinGa_Applicationlist">Application list</string>
+    
+    <string name="ImportChannel">Importing Channel</string>
+    <string name="ImportChannelSuccess">Importing Channel Success</string>
+    <string name="ImportChannelFail">Importing Channel fail</string>
+
+    <string name="ImportLogo">Import Logo</string>
+    <string name="ExportLogo">Export Logo</string>
+
+    <string name="Q_Menu">Q.Menu</string>
+    <string name="Multimedia">MultiMedia</string>
+
+    <string name="about_open_Source_license">Open source licenses</string>
+
+    <string name="homebt">Home</string>
+    <string name="vividbt">Vivid</string>
+    <string name="userbt">User</string>
+    <string name="standardbt">Standard</string>
+    <string name="homebttext">Default picture setting optimum power saving mode</string>
+    <string name="vividbttext">Enhance viewing experience</string>
+    <string name="userbttext">Default sound setting optimum power saving mode</string>
+    <string name="standardbttext">Enhance Music experience</string>
+    <string name="tv_bee_guide_tip">Please choose the mode you watch TV programs, start to experience it!</string>
+    <string name="SPEAKER_MODE">Speaker Mode</string>
+    <string name="SPEAKER_ON">On</string>
+    <string name="SPEAKER_OFF">Off</string>
+    <string name="SPEAKER_MODE_TIPS">SPEAKER IN OFF MODE!</string>
+
+    <string name="tcl_sub_dvd">DVD</string>
+    <string name="tcl_sub_blue_dvd">Blue DVD</string>
+    <string name="tcl_sub_game">Game</string>
+    <string name="tcl_sub_tvcable">Tv Cable</string>
+    <string name="tcl_sub_pc">PC</string>
+    <string name="tcl_sub_camera">Camera</string>
+    <string name="tcl_sub_netcable">Network Cable</string>
+    <string name="OPTION_AUTO">Auto</string>
+    <string name="OPTION_MANUAL">Manual</string>
+    <string name="setting_smart_source">Smart Source</string>
+    <string name="tcl_source_detected_auto_msg">Source detected, TV will switch to this source.</string>
+    <string name="tcl_source_detected_manual_msg">Source detected, switch to this source?</string>
+    <string name="tcl_source_usb">USB</string>
+    <string name="tcl_e_sticker">Shop Mode</string>
+    <string name="memory_detail_information">Details of the memory</string>
+    <string name="memory_information">Display the memory information</string>
+    <!-- hotel start -->
+    <string name="hotel_title">Hotel Mode</string>
+    <string name="hotel_en">Hotel Mode</string>
+    <string name="setting_max_volume">Max Volume</string>
+    <string name="setting_default_volume">Default Volume</string>
+    <string name="setting_menu_lock">Menu Lock</string>
+    <string name="setting_remote_lock">Remote Lock</string>
+    <string name="setting_power_mode">Power Mode</string>
+    <string name="setting_power_mode_standby">Standby</string>
+    <string name="setting_power_mode_boot_up">Boot Up</string>
+    <string name="setting_power_mode_memory">Last Status</string>
+    <string name="setting_default_channel">Default Channel</string>
+    <string name="setting_boot_source">Boot Source</string>
+    <string name="txt_failed">Failed</string>
+    <string name="txt_success">Success</string>
+    <string name="setting_data_clone">Data Clone</string>
+    <string name="setting_clone_import">Import Config</string>
+    <string name="setting_clone_export">Export Config</string>
+    <string name="setting_source_key_lock">Source Key Lock</string>
+    <string name="setting_signal_wake_up">Signal Wake Up</string>
+    <string name="menu_locked">Menu Locked</string>
+    <string name="keypad_locked">Keypad Locked</string>
+    <string name="keypad_unlocked">Keypad Unlocked</string>
+    <string name="remote_locked">Remote Locked</string>
+    <string name="hotel_auto_set">Auto Set</string>
+    <string name="hotel_locked">Hotel Locked</string>
+    <string name="scan_locked">Scan Lock</string>
+    <string name="source_lock">Source Lock</string>
+    <string name="source_lock_err_cur">can not lock current source!</string>
+    <string name="source_lock_err_boot">can not lock bootup source!</string>
+    <string name="start_import">start import. wait for reboot!</string>
+    <string name="start_export">start export. please wait!</string>
+    <string name="reset_hotel">Hotel Reset</string>
+    <string name="reset_no">No</string>
+    <string name="reset_yes">Yes</string>
+    <string name="reset_hotel_info">Are you sure to reset hotel config?</string>
+    <string name="tip_logo">logo:</string>
+    <string name="tip_channel">channel:</string>
+    <string name="tip_setting">setting:</string>
+    <string name="tip_reboot">[reboot...]</string>
+    <string name="reboot_help">Reboot TV immediately?</string>
+    <string name="reboot_title">Reboot</string>
+
+    <!-- hotel end -->
+
+    <string name="Hotspot_switch_wifi">Wi-Fi will close automatically if Hotspot turned ON</string>
+    <string name="wifi_switch_Hotspot">Hotspot will close automatically if Wi-Fi turned ON</string>
+
+    <string name="TTX">Teletext On</string>
+    <string name="diagnostic_msg">Some thing goes wrong,please visit the website!</string>
+
+    <!--BISS-->
+    <string name="biss_key_list">Biss Key List</string>
+    <string name="biss_program">Program Name</string>
+    <string name="biss_frequency">Frequency</string>
+    <string name="biss_sid">SID</string>
+    <string name="biss_key">Key</string>
+    <string name="btn_biss_add_key">Add Key</string>
+    <string name="btn_biss_del_key">Delete All</string>
+    <string name="txt_biss_long_press">*Long Press the enter Key to edit biss key list!</string>
+    <string name="edit_program_name">Program Name: %s</string>
+    <string name="biss_edit_key">Edit Key</string>
+    <string name="txt_biss_back_press">*Press the back Key to exit the edit</string>
+    <string name="toast_edit_biss">Use 0~9,A~F key to input</string>
+    <string name="txt_edit_key">Key:</string>
+    <string name="biss_delete_key">Delete key</string>
+    <string name="confirm_delete_biss">Are you sure to delete?</string>
+    <string name="toast_biss_select_channel">Please,Choose the channel then press OK.</string>
+    <string name="txt_enter_key_select_channel">*Please,Choose the channel then press OK.</string>
+    <string name="toast_add_biss">Failed:Channel exist!</string>
+    <string name="toast_right_information">Key incorrect.Please enter again!</string>
+    <string name="biss_add_key">Add key</string>
+    <string name="txt_add_channel_key">Enter a Key for these channels</string>
+    <string name="hint_edit_key">0~9,A~F</string>
+    <string name="digits_edit_key">ABCDEF0123456789</string>
+
+    <string name="advanced_settings">advanced settings</string>
+    <string name="Static_IP_address">Static IP address</string>
+    <string name="IP_address">IP address</string>
+    <string name="IP_gateway">gateway</string>
+    <string name="IP_prefix_length">Network prefix length</string>
+    <string name="DNS_one">DNS 1</string>
+    <string name="DNS_two">DNS 2</string>
+    <string name="eyesafetext">Default picture setting optimum power saving mode</string>
+    <string name="vividtext">Enhance viewing experience</string>
+    <string name="standardtext">Standard picture setting</string>
+    <string name="vix_pic_info">You are in "Optomized Saving Mode" For "Enhanced Viewing Experience" Adjust Picture Mode Accordingly</string>
+    <string name="vix_guide_title">Picture setting select</string>
+    <string name="fti_eco_mode_title">Eco mode setting select</string>
+    <string name="fti_eco_mode_info">You need to select which mode you want.</string>
+    <string name="fti_eco_mode_eco_mode_description">Default setting optimum power saving mode</string>
+    <string name="fti_eco_mode_shop_mode_description">Standard setting for shop</string>
+    <string name="fti_eco_mode_eco_mode_text">ECO Mode</string>
+    <string name="fti_eco_mode_shop_mode_text">Shop Mode</string>
+    <string name="power_mode">Power Mode</string>
+    <string name="gamma_mode">Gamma Mode</string>
+
+    <string name="fota_update">Wireless Update</string>
+    <string name="fota_update_des">Update System</string>
+
+    <!-- fresh tone -->
+    <string name="fresh_tone">Fresh Tone</string>
+
+    <!-- black and white extender -->
+    <string name="black_extender">Black Extender</string>
+    <string name="white_extender">White Extender</string>
+    <string name="mac_address">Mac Address</string>
+
+    <string name="DVB_5V">DVB 5V</string>
+
+    <!--picture gamma -->
+    <string name="picture_gamma">Picture Gamma</string>
+
+    <string name="wlan_not_available">WLAN is not available</string>
+    <string name="wlan_in_scanning">Wlan is Scanning,You select other to have a try</string>
+    <string name="ssid_too_long">SSID is more than 32 bytes,Please input again</string>
+    <string name="trun_off_surround">Now turn off surround</string>
+    <string name="str_fav_mode">Fav Mode</string>
+    <string name="str_go_fav_mode">Please Press OK Enter The Fav Mode</string>
+    <string name="str_exit_fav_mode">Please Press OK Exit The Fav Mode</string>
+    <string name="setting_lcn_conflict_setting">Lcn Conflict Setting</string>
+    <string name="conflict_lcn_num">Conflict for channel num:   %d</string>
+    <string name="setting_lcn_conflict_setting_tip">ENTER</string>
+    <string name="setting_lcn_conflict_manual_tip">Conflicts in channel numbering. \n Perform an automatic resulution?</string>
+    <string name="setting_lcn_conflict_auto_set">&#160;&#160;Yes</string>
+    <string name="setting_lcn_conflict_manual_set">No&#160;&#160;</string>
+
+    <string name="system_updates">System Updates</string>
+
+    <string name="setting_lcn_region_list">Target Region Setting</string>
+    <string name="nav_oad_confirm_description">Software update. A new recommended software update is available. The update might take some time and the screen might go black. Do you want to update now?</string>
+    <string name="nav_oad_confirm_download_after_time">It will auto download after %d second</string>
+    <string name="nav_oad_download_title">Software Update (OAD)</string>
+    <string name="nav_oad_accept_download">accept</string>
+    <string name="nav_oad_reject_download">exit</string>
+    <string name="nav_oad_retry_download">retry</string>
+    <string name="nav_oad_reboot_update">upgrade</string>
+    <string name="nav_oad_downloading_info">This process may take up to 25 minutes</string>
+    <string name="nav_oad_manual_download_fail">Unable to download the software. Do you want to retry?</string>
+    <string name="nav_oad_restart_confirm">Software download successfully! Restart the TV now?</string>
+    <string name="nav_oad_downloading">Downloading…</string>
+    <string name="nav_oad_switch_on">OAD</string>
+    <string name="nav_sw_upgrade_oad">Software Update(OAD)</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <!-- bluetooth remote control begin -->
+    <string name="alert_remote_control_low_battery">Battery low, please replace remote control\'s battery as soon as possible!</string>
+    <!-- bluetooth remote control end -->
+    <string name="select_the_picture_mode">Select the picture mode</string>
+    <string name="scan_channels">Scan channels</string>
+    <string name="eco">Eco</string>
+    <string name="non">Non</string>
+    <string name="keyboard">Keyboard</string>
+    <string name="COUNTRY_BA">Bosnia and Herzegovina</string>
+    <string name="COUNTRY_CV">Cape Verde</string>
+    <string name="COUNTRY_DM">Dominica</string>
+    <string name="operator_select">Operator</string>
+    <string name="operator_select_digi">Digi</string>
+    <string name="operator_select_other">Other</string>
+
+    <!--ewbs-->
+    <string name="ewbs_area_code">EWBS Area Code</string>
+    <string name="ewbs_city">City Selection</string>
+    <string name="ewbs_code">Area Code Setting</string>
+    <string name="ewbs_ph_wide">Wide Area Zone</string>
+    <string name="ewbs_ph_region">Region</string>
+    <string name="ewbs_ph_city">City</string>
+    <string name="enable_ipv6">Enable IPv6</string>
+    <string name="audio_test">Audio Test</string>
+    <string name="picture_test">Picture Test</string>
+</resources>
