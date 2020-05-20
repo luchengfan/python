@@ -1721,7 +1721,6 @@
         <item>@string/str_genre_documentary</item>
     </string-array>
     <string-array name="str_arr_epg_genre_brizal">
-        <item></item>
         <item>@string/str_genre_news</item>
         <item>@string/str_genre_sports_general</item>
         <item>@string/str_genre_education_uk</item>
@@ -1738,7 +1737,6 @@
         <item>@string/str_genre_raffle_tv_sales_prizing_brizal</item>
         <item>@string/str_genre_debate_interview_brizal</item>
         <item>@string/str_genre_other_brizal</item>
-        <item></item>
     </string-array>
     <string-array name="str_arr_epg_genre_default">
         <item>@string/str_genre_unclassified</item>
