@@ -1,9 +1,9 @@
 import xml.dom.minidom
 
-xml_file = 'strings.xml'
 strings_del_empty = 'strings_del_empty.xml'
 
 def del_empty_string():
+    xml_file = 'strings.xml'
     fo = open(strings_del_empty , 'w' , encoding="utf-8")
     fi = open(xml_file,'r', encoding="utf-8")
     content = fi.readlines()
@@ -12,8 +12,9 @@ def del_empty_string():
         fo.write(line)
     fo.close()
 
-
 def clean_string():
+    del_empty_string() #先删除xml文件中<item></item>的内容，避免后面报错
+
     #打开xml文档
     dom = xml.dom.minidom.parse(strings_del_empty)
     #得到文档元素对象
@@ -22,7 +23,6 @@ def clean_string():
     items = root.getElementsByTagName('item')
 
     for i in range(len(strings)):
-        print(strings[i].firstChild.data)
         if '@string/' in strings[i].firstChild.data:
             temp_string = strings[i].firstChild.data[8:]
             for j in range(len(strings)):
@@ -37,10 +37,9 @@ def clean_string():
                     items[i].firstChild.data = strings[j].firstChild.data
 
     #修改并保存文件
-    xml_specific = 'result.xml'
-    with open(xml_specific , 'w' , encoding="utf-8") as f:
+    xml_remove_at_string = 'result.xml'
+    with open(xml_remove_at_string , 'w' , encoding="utf-8") as f:
         dom.writexml(f)
 
 if __name__ == "__main__":
-    del_empty_string()
     clean_string()
