@@ -7,7 +7,7 @@
 import os
 from PIL import Image,ImageDraw,ImageFont
 
-def watermark(filename,pic,target_format):
+def convert_picture(filename,pic,target_format):
     # 实例化图片对象
     img = Image.open(filename)
     img_format = img.format  # 获取图片的格式
@@ -27,6 +27,6 @@ if __name__ == '__main__':
     pictures=os.listdir(director_path)#获取文件夹下的所有图片名称
     for pic in pictures:
         filename=director_path+pic#构造每张图片的路径名称
-        watermark(filename,pic,target_format)#添加水印
+        convert_picture(filename,pic,target_format)#添加水印
     print("全部处理完毕")
 
