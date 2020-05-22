@@ -8,8 +8,8 @@ def del_empty_string():
     fi = open(xml_file,'r', encoding="utf-8")
     content = fi.readlines()
     for line in content:
-        line=line.replace('<item></item>','')
-        fo.write(line)
+        if ('<item></item>' not in line) and ('></string>' not in line):
+            fo.write(line)
     fo.close()
 
 def clean_string():
