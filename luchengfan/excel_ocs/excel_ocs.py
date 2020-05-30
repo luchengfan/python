@@ -30,8 +30,16 @@ def get_ocsid():
     '''
     在tables_list列表中随机抽取一个ID
     '''
+    random_number_list = [] #创建一个空列表，存储抽取到的数据
     excel_num = len(tables_list)
     get_id = random.randint(0 , excel_num - 1)
+
+    if (len(random_number_list) != 0):
+        while (get_id in random_number_list): #数据重复，重新抽取
+            get_id = random.randint(0 , excel_num - 1)
+
+    random_number_list.append(get_id)
+
     return get_id
 
 def open_url():
@@ -46,13 +54,12 @@ def open_url():
 
 if __name__ == '__main__':
     excel_file = '未关闭订单.xlsx'
+    choose_times = 0 #记录当前抽取的次数
+    choose_total = 3 #设置一共需要抽取的次数
 
     if not os.path.isfile(excel_file):
         print('文件不存在！！！')
         exit(0)
-
-    choose_times = 0 #记录当前抽取的次数
-    choose_total = 3 #设置一共需要抽取的次数
 
     data = xlrd.open_workbook(excel_file)
     sheet_table = data.sheets()[0] #读取excel表中的sheet1
