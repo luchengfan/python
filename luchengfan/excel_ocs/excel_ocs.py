@@ -17,7 +17,7 @@ def import_excel(excel_tables):
     for rown in range(excel_tables.nrows):
         array = {'ID':'','客户':'','软件工程师':'','客户确认状态':'','更新时间':'' }
 
-        array['ID'] = str(excel_tables.cell_value(rown,1))[:6] #取前6位去掉生成的.0
+        array['ID'] = str(excel_tables.cell_value(rown,1))[:6] #取前6位,去掉生成的.0
         array['客户'] = excel_tables.cell_value(rown,2)
         array['软件工程师'] = excel_tables.cell_value(rown,3)
         array['客户确认状态'] = excel_tables.cell_value(rown,5)
@@ -51,12 +51,19 @@ if __name__ == '__main__':
         print('文件不存在！！！')
         exit(0)
 
-    choose_times = 0
+    choose_times = 0 #记录当前抽取的次数
+    choose_total = 3 #设置一共需要抽取的次数
 
     data = xlrd.open_workbook(excel_file)
     sheet_table = data.sheets()[0] #读取excel表中的sheet1
     import_excel(sheet_table)  #将excel表格的内容导入到列表中
 
-    while(choose_times < 3):
+    if len(tables_list) == 0:
+        print('没有数据，退出抽取')
+        exit(0)
+    elif len(tables_list) < choose_total:
+        choose_total = len(tables_list)
+
+    while(choose_times < choose_total):
         choose_times += 1
         open_url()
