@@ -5,6 +5,7 @@
 import xlrd
 import random
 import webbrowser
+import os
 
 tables_list = []  #创建一个空列表，存储Excel的数据
 
@@ -35,8 +36,13 @@ def open_url():
 
 if __name__ == '__main__':
     excel_file = '未关闭订单.xlsx'
+
+    if not os.path.isfile(excel_file):
+        print('文件不存在！！！')
+        exit(0)
+
     data = xlrd.open_workbook(excel_file)
-    sheet_table = data.sheets()[0]
+    sheet_table = data.sheets()[0] #读取excel表中的sheet1
     import_excel(sheet_table)  #将excel表格的内容导入到列表中
 
     open_url()
