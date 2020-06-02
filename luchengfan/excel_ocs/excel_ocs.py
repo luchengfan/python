@@ -6,8 +6,9 @@ import xlrd
 import random
 import webbrowser
 import os
-
-tables_list = []  #创建一个空列表，存储Excel的数据
+from tkinter import *
+from tkinter.filedialog import askopenfilename
+from tkinter.messagebox import showinfo
 
 #将excel表格内容导入到tables_list列表中
 def import_excel(excel_tables):
@@ -52,8 +53,20 @@ def open_url():
     url_link = 'http://ocs.gz.cvte.cn/tv/Tasks/view/range:my/' + get_ocs_id
     webbrowser.open_new_tab(url_link)
 
-if __name__ == '__main__':
-    excel_file = '未关闭订单.xlsx'
+def fileopen():
+    '''
+    打开文件
+    '''
+    v.set('') #清除文件内容
+    excel_file = askopenfilename(initialdir = r'D:\Code\luchengfan\python\luchengfan\excel_ocs')
+    if excel_file:
+        v.set(excel_file)
+
+def run():
+    '''
+    执行随机抽取OCS功能
+    '''
+    excel_file = v.get()
     choose_times = 0 #记录当前抽取的次数
     choose_total = 3 #设置一共需要抽取的次数
 
@@ -74,3 +87,22 @@ if __name__ == '__main__':
     while(choose_times < choose_total):
         choose_times += 1
         open_url()
+
+if __name__ == '__main__':
+    tables_list = []  #创建一个空列表，存储Excel的数据
+
+    frameT = Tk()
+    frameT.geometry('500x100+400+200')
+    frameT.title('未关闭订单')
+    frame = Frame(frameT)
+    frame.pack(padx=10 , pady=10) #设置外边框
+    frame1 = Frame(frameT)
+    frame1.pack(padx=10 , pady=10) #设置外边框
+
+    v = StringVar()
+
+    ent = Entry(frame,width=50,textvariable=v).pack(fill=X,side=LEFT) #X方向填充，靠左
+    btn = Button(frame,width=20,text='选择文件',font=('宋体',14),command=fileopen).pack(fill=X,padx=10)
+    ext = Button(frame1,width=10,text='运行',font=('宋体',14),command=run).pack(fill=X,side=LEFT)
+    etb = Button(frame1,width=10,text='退出',font=('宋体',14),command=frameT.quit).pack(fill=Y,padx=10)
+    frameT.mainloop()
