@@ -10,10 +10,9 @@ from tkinter import *
 from tkinter.filedialog import askopenfilename
 from tkinter.messagebox import showinfo
 
-#将excel表格内容导入到tables_list列表中
 def import_excel(excel_tables):
     '''
-    打开excel表格，处理相关的数据
+    打开excel表格，将excel表格内容导入到tables_list列表中
     '''
     for rown in range(excel_tables.nrows):
         array = {'ID':'','客户':'','软件工程师':'','客户确认状态':'','更新时间':'' }
