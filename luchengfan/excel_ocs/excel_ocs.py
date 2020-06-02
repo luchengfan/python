@@ -57,7 +57,7 @@ def fileopen():
     打开文件
     '''
     v.set('') #清除文件内容
-    excel_file = askopenfilename(initialdir = r'D:\Code\luchengfan\python\luchengfan\excel_ocs')
+    excel_file = askopenfilename()
     if excel_file:
         v.set(excel_file)
 
@@ -70,16 +70,20 @@ def run():
     choose_total = 3 #设置一共需要抽取的次数
 
     if not os.path.isfile(excel_file):
-        print('文件不存在！！！')
-        exit(0)
+        showinfo('提醒' , '文件不存在，请重新选择！')
+        return
+    else:
+        if not (excel_file.endswith('.xlsx') or excel_file.endswith('.xls')):
+            showinfo('提醒' , '非excel文件，请重新选择！')
+            return
 
     data = xlrd.open_workbook(excel_file)
     sheet_table = data.sheets()[0] #读取excel表中的sheet1
     import_excel(sheet_table)  #将excel表格的内容导入到列表中
 
     if len(tables_list) == 0:
-        print('没有数据，退出抽取')
-        exit(0)
+        showinfo('提醒' , '表格中没有数据，请重新选择！')
+        return
     elif len(tables_list) < choose_total:
         choose_total = len(tables_list)
 
