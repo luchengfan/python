@@ -56,26 +56,25 @@ def fileopen():
     '''
     打开文件
     '''
-    v.set('') #清除文件内容
+    file_text.set('') #清除文件内容
     excel_file = askopenfilename()
     if excel_file:
-        v.set(excel_file)
+        file_text.set(excel_file)
 
 def run():
     '''
     执行随机抽取OCS功能
     '''
-    excel_file = v.get()
+    excel_file = file_text.get()
     choose_times = 0 #记录当前抽取的次数
     choose_total = 3 #设置一共需要抽取的次数
 
     if not os.path.isfile(excel_file):
         showinfo('提醒' , '文件不存在，请重新选择！')
         return
-    else:
-        if not (excel_file.endswith('.xlsx') or excel_file.endswith('.xls')):
-            showinfo('提醒' , '非excel文件，请重新选择！')
-            return
+    elif not (excel_file.endswith('.xlsx') or excel_file.endswith('.xls')):
+        showinfo('提醒' , '非excel文件，请重新选择！')
+        return
 
     data = xlrd.open_workbook(excel_file)
     sheet_table = data.sheets()[0] #读取excel表中的sheet1
@@ -102,10 +101,10 @@ if __name__ == '__main__':
     frame1 = Frame(frameT)
     frame1.pack(padx=10 , pady=10) #设置外边框
 
-    v = StringVar()
+    file_text = StringVar()
 
-    ent = Entry(frame,width=50,textvariable=v).pack(fill=X,side=LEFT) #X方向填充，靠左
+    ent = Entry(frame,width=50,textvariable=file_text).pack(fill=X,side=LEFT) #X方向填充，靠左
     btn = Button(frame,width=20,text='选择文件',font=('宋体',14),command=fileopen).pack(fill=X,padx=10)
-    ext = Button(frame1,width=10,text='运行',font=('宋体',14),command=run).pack(fill=X,side=LEFT)
+    ext = Button(frame1,width=10,text='开始',font=('宋体',14),command=run).pack(fill=X,side=LEFT)
     etb = Button(frame1,width=10,text='退出',font=('宋体',14),command=frameT.quit).pack(fill=Y,padx=10)
     frameT.mainloop()
