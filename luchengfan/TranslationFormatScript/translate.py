@@ -274,19 +274,31 @@ def mode_2(parser):
         output_dir = excel_path.split('/')[-1].replace('.xls','')
     workbook = xlrd.open_workbook(excel_path)
     row_index = read_row_index(excel_path)
+    sheet_name = workbook._sheet_names
 
     # 处理translate sheet的内容
-    col_index = read_col_index(excel_path, SHEET_NAMES[0])
-    data = parse_translate_values(row_index, col_index, excel_path) 
-    write_to_xml(data, output_dir)
+    if SHEET_NAMES[0] in sheet_name:
+        col_index = read_col_index(excel_path, SHEET_NAMES[0])
+        data = parse_translate_values(row_index, col_index, excel_path) 
+        write_to_xml(data, output_dir)
+    else:
+        print(SHEET_NAMES[0] , '不在excel中')
+    
     # 处理untranslate的内容
-    #col_index = read_col_index(excel_path, SHEET_NAMES[1])
-    #data = parse_untranslate_values(col_index, excel_path, SHEET_NAMES[1] )
-    #write_to_xml(data, output_dir, xml_name='strings_untranslate.xml')
+    if SHEET_NAMES[1] in sheet_name:
+        col_index = read_col_index(excel_path, SHEET_NAMES[1])
+        data = parse_untranslate_values(col_index, excel_path, SHEET_NAMES[1] )
+        write_to_xml(data, output_dir, xml_name='strings_untranslate.xml')
+    else:
+        print(SHEET_NAMES[1] , '不在excel中')
+    
     # 处理will translate的内容
-    #col_index = read_col_index(excel_path, SHEET_NAMES[2])
-    #data = parse_untranslate_values(col_index, excel_path, SHEET_NAMES[2] )
-    #write_to_xml(data, output_dir, xml_name='strings_will_translate.xml')
+    if SHEET_NAMES[2] in sheet_name:
+        col_index = read_col_index(excel_path, SHEET_NAMES[2])
+        data = parse_untranslate_values(col_index, excel_path, SHEET_NAMES[2] )
+        write_to_xml(data, output_dir, xml_name='strings_will_translate.xml')
+    else:
+        print(SHEET_NAMES[2] , '不在excel中')
 
 def get_excel_file(excel_file_path):
     '''
