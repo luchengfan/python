@@ -288,12 +288,35 @@ def mode_2(parser):
     #data = parse_untranslate_values(col_index, excel_path, SHEET_NAMES[2] )
     #write_to_xml(data, output_dir, xml_name='strings_will_translate.xml')
 
+def get_excel_file(excel_file_path):
+    '''
+    获取传参路径下的excel文件
+    返回当前文件夹及其子目录下所有的excel文件(包括绝对路径)
+    '''
+    excel_type_list = [".xls", ".xlsx"]
+    excel_list = []
+
+    for root, dirs, files in os.walk(excel_file_path):
+        for file in files:
+            for excel_type in excel_type_list:
+                if file.endswith(excel_type):
+                    filename = root + "/" + file #注意不要改动"/"
+                    excel_list.append(filename)
+    return excel_list
+
 if __name__ == '__main__':
     (parser,Args) = set_opt()
 
     if parser.mode == 1:
         mode_1(parser)
     else:
-        mode_2(parser)
-
-
+        if os.path.isdir(parser.input_path): #文件夹
+            excel_file = get_excel_file(parser.input_path)
+            for file_path in excel_file:
+                print('file_path = ' , file_path)
+                parser.input_path = file_path
+                mode_2(parser)
+        elif os.path.isfile(parser.input_path): #文件
+            mode_2(parser)
+        else:
+            print ("请检查输入的路径是否存在")
