@@ -272,6 +272,7 @@ def mode_2(parser):
     output_dir = parser.output
     if output_dir == EXCEL_FILE_NAME:
         output_dir = excel_path.split('/')[-1].replace('.xls','')
+        output_dir = 'output_file/' + output_dir
     workbook = xlrd.open_workbook(excel_path)
     row_index = read_row_index(excel_path)
     sheet_name = workbook._sheet_names
@@ -281,24 +282,24 @@ def mode_2(parser):
         col_index = read_col_index(excel_path, SHEET_NAMES[0])
         data = parse_translate_values(row_index, col_index, excel_path) 
         write_to_xml(data, output_dir)
-    else:
-        print(SHEET_NAMES[0] , '不在excel中')
+    #else:
+        #print(SHEET_NAMES[0] , '不在excel中')
     
     # 处理untranslate的内容
     if SHEET_NAMES[1] in sheet_name:
         col_index = read_col_index(excel_path, SHEET_NAMES[1])
         data = parse_untranslate_values(col_index, excel_path, SHEET_NAMES[1] )
         write_to_xml(data, output_dir, xml_name='strings_untranslate.xml')
-    else:
-        print(SHEET_NAMES[1] , '不在excel中')
+    #else:
+        #print(SHEET_NAMES[1] , '不在excel中')
     
     # 处理will translate的内容
     if SHEET_NAMES[2] in sheet_name:
         col_index = read_col_index(excel_path, SHEET_NAMES[2])
         data = parse_untranslate_values(col_index, excel_path, SHEET_NAMES[2] )
         write_to_xml(data, output_dir, xml_name='strings_will_translate.xml')
-    else:
-        print(SHEET_NAMES[2] , '不在excel中')
+    #else:
+        #print(SHEET_NAMES[2] , '不在excel中')
 
 def get_excel_file(excel_file_path):
     '''
@@ -325,7 +326,6 @@ if __name__ == '__main__':
         if os.path.isdir(parser.input_path): #文件夹
             excel_file = get_excel_file(parser.input_path)
             for file_path in excel_file:
-                print('file_path = ' , file_path)
                 parser.input_path = file_path
                 mode_2(parser)
         elif os.path.isfile(parser.input_path): #文件
