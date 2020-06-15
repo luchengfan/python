@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<resources>
-    <string name="media">สื่อ</string>
-    <string name="setting">ตั้งค่า</string>
-    <string name="apps">แอป</string>
-    <string name="app_name">LauncherFall4</string>
-    <string name="network">เครือข่าย</string>
-</resources>
