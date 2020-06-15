@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="media">Phương tiện</string>
+    <string name="setting">Cài đặt</string>
+    <string name="apps">ỨNG DỤNG</string>
+    <string name="app_name" />
+    <string name="network">Mạng</string>
+</resources>

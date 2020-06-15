@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">AppStore</string>
+    <string name="search">Search</string>
+    <string name="setting_latest_version">latest version</string>
+    <string name="download">Download</string>
+    <string name="setting_update">Update</string>
+    <string name="cancel">Cancel</string>
+    <string name="home">Home</string>
+    <string name="open">Open</string>
+    <string name="user_app">User App</string>
+    <string name="app_detail_file_size">Size</string>
+    <string name="download_failed">Download failed</string>
+    <string name="search_total">%d results found</string>
+    <string name="app_detail_update_time">Update time</string>
+    <string name="setting_installing">Installing</string>
+    <string name="network_error">Failed to connect network</string>
+    <string name="classify">Classify</string>
+    <string name="more">More</string>
+    <string name="downloading">Downloading</string>
+    <string name="recently">Recently used</string>
+    <string name="uninstall_alert">Do you want to uninstall this application?</string>
+    <string name="print_screen">Print Screen</string>
+    <string name="app_detail_version">Version</string>
+    <string name="update">Update</string>
+    <string name="my_apps">My apps</string>
+    <string name="try_again">Try again</string>
+    <string name="uninstall_failed">This app uninstall failed.</string>
+    <string name="placed_top">Placed Top</string>
+    <string name="categories">Categories</string>
+    <string name="setting_version_name">Application version: %s</string>
+    <string name="about">About</string>
+    <string name="install_failed">Install failed</string>
+    <string name="installing">Installing</string>
+    <string name="install">Install</string>
+    <string name="uninstall">Uninstall</string>
+    <string name="setting_downloading">Downloading</string>
+    <string name="setting_check_update">Check update</string>
+    <string name="press_menu">Press menu key to edit.</string>
+</resources>

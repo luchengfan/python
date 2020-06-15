@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="change_user_defined">Change user-defined</string>
+    <string name="app_name">Invisible Art</string>
+    <string name="upload_success">UPLOAD_SUCCESS</string>
+    <string name="menu_after_press">Edit the photos group you want to play automatically</string>
+    <string name="select_photos">Please select the photos that you want to use as user defined photos</string>
+    <string name="auto_play_mode">You have been selected Auto-Play mode,photos will roll plays itself</string>
+    <string name="add_user_defined">Add user-defined</string>
+    <string name="cancel">Cancel</string>
+    <string name="exit_first">You are now in the edit mode,you should exit this mode for adding the user-defined group</string>
+    <string name="supoort_format">Support format=[%1$s]</string>
+    <string name="delete_pre_press">Press MENU button and press ENTER to delete the pictures.</string>
+    <string name="mountain">Mountains</string>
+    <string name="upload_fail">UPLOAD_FAILED</string>
+    <string name="confirm">Confirm</string>
+    <string name="select_photos_confirm">Are you sure to select these</string>
+    <string name="no_picture">Sorry! photos not found</string>
+    <string name="user_play_mode">You have been selected User-Play mode in which photos will not play by itself but by you</string>
+    <string name="customer_add">user defined</string>
+    <string name="custom">select as custom</string>
+    <string name="max_photos">Support  images  up to %1$d</string>
+    <string name="forest">Forest</string>
+    <string name="animal">Animal</string>
+    <string name="beach">Beach</string>
+    <string name="enter_usb">Please insert hard disk or usb which has photos or press back key to exit</string>
+    <string name="picture">Photos</string>
+    <string name="local_upload">Upload photos from local disk</string>
+    <string name="click_to_exit">Click again to exit</string>
+    <string name="scan_to_upload">Phone scans to upload photos</string>
+    <string name="falls">Falls</string>
+    <string name="select_photos_confirm2">photos as your user defined photos?</string>
+    <string name="scan_tip">TV and Device must connect the same Hotspot.</string>
+    <string name="flowers">Flowers</string>
+    <string name="select_photos_full">Photos have been fully selected</string>
+    <string name="building">Building</string>
+    <string name="delete_after_press">Press the Back button to exit.</string>
+    <string name="limit_photos">You can select less or equals to %1$d photos as you user defined group photos</string>
+    <string name="upload_failed">upload failed=[%1$s]</string>
+    <string name="give_authority">Please grant the files read and write permissions</string>
+    <string name="menu_pre_press">Press menu key to edit the photos group you want to play automatically</string>
+    <string name="the_first">It is the first one already</string>
+</resources>
