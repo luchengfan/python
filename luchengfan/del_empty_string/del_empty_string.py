@@ -43,15 +43,21 @@ def get_xml_file(xml_file_path):
 
 
 if __name__ == "__main__":
-    init_xml_file = input('请输入处理的xml文件：') 
+    init_xml_file = input('请输入处理的文件或文件夹：') 
     is_dir = False
 
     if os.path.isdir(init_xml_file): #文件夹
         is_dir = True
         xml_file = get_xml_file(init_xml_file)
+        if len(xml_file) == 0:
+            print ("当前路径下无xml文件")
+            exit(0)
         for file_path in xml_file:
             del_empty_string(file_path)
     elif os.path.isfile(init_xml_file): #文件
+        if not init_xml_file.endswith(".xml"):
+            print ("请输入xml文件")
+            exit(0)
         is_dir = False
         del_empty_string(init_xml_file)
     else:
