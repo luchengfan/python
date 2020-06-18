@@ -10,9 +10,9 @@ def del_empty_string(init_file):
     input_file = open(init_file ,'r' , encoding="utf-8") #要处理的带@string字符的原始文件
 
     if is_dir:
-        del_empty_str_file = 'output_file/' + init_file.split('/strings')[0]
+        del_empty_str_file = 'del_empty_string/' + init_file.split('/strings')[0]
     else:
-        del_empty_str_file = 'output_file/'
+        del_empty_str_file = 'del_empty_string/'
 
     if not os.path.isdir(del_empty_str_file):
         os.makedirs(del_empty_str_file)
