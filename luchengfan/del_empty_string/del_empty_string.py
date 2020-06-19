@@ -7,7 +7,7 @@ def del_empty_string(init_file):
     <string name="COUNTRY_SG_LOCK_INFO_7" />
     " />
     '''
-    input_file = open(init_file ,'r' , encoding="utf-8") #要处理的带@string字符的原始文件
+    input_file = open(init_file ,'r' , encoding="utf-8")
 
     if is_dir:
         del_empty_str_file = 'del_empty_string/' + init_file.split('/strings')[0]
@@ -17,7 +17,7 @@ def del_empty_string(init_file):
     if not os.path.isdir(del_empty_str_file):
         os.makedirs(del_empty_str_file)
 
-    output_file = open(del_empty_str_file + '/strings.xml' , 'w' , encoding="utf-8") #生成的中间文件，删除了原始文件中的空元素
+    output_file = open(del_empty_str_file + '/strings.xml' , 'w' , encoding="utf-8")
 
     all_strings = input_file.readlines()
     for line in all_strings:

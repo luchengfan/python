@@ -5,6 +5,8 @@ import xlwt, xlrd
 import json
 from optparse import OptionParser
 import os
+import xml.dom.minidom
+import io
 import xml.etree.ElementTree as ET
 import lans_dict
 import blacklist
@@ -272,7 +274,7 @@ def mode_2(parser):
     output_dir = parser.output
     if output_dir == EXCEL_FILE_NAME:
         output_dir = excel_path.split('/')[-1].replace('.xls','')
-        output_dir = 'output_file/' + output_dir
+        output_dir = output_file_path + output_dir
     workbook = xlrd.open_workbook(excel_path)
     row_index = read_row_index(excel_path)
     sheet_name = workbook._sheet_names
@@ -301,30 +303,54 @@ def mode_2(parser):
     #else:
         #print(SHEET_NAMES[2] , '不在excel中')
 
-def get_excel_file(excel_file_path):
+def del_empty_string(init_file):
+    '''
+    删除xml文件中的空元素，例如:
+    <string name="COUNTRY_SG_LOCK_INFO_7" />
+    " />
+    '''
+    input_file = io.open(init_file ,'r' , encoding="utf-8")
+
+    del_empty_str_file = 'del_empty_string/' + init_file.split('/strings')[0]
+
+    if not os.path.isdir(del_empty_str_file):
+        os.makedirs(del_empty_str_file)
+
+    output_file = io.open(del_empty_str_file + '/strings.xml' , 'w' , encoding="utf-8")
+
+    all_strings = input_file.readlines()
+    for line in all_strings:
+        if (r'" />' not in line):
+            output_file.write(line)
+    output_file.close()
+
+def get_file_file(file_path , file_type_list):
     '''
     获取传参路径下的excel文件
     返回当前文件夹及其子目录下所有的excel文件(包括绝对路径)
     '''
-    excel_type_list = [".xls", ".xlsx"]
-    excel_list = []
+    
+    file_list = []
 
-    for root, dirs, files in os.walk(excel_file_path):
+    for root, dirs, files in os.walk(file_path):
         for file in files:
-            for excel_type in excel_type_list:
+            for excel_type in file_type_list:
                 if file.endswith(excel_type):
                     filename = root + "/" + file #注意不要改动"/"
-                    excel_list.append(filename)
-    return excel_list
+                    file_list.append(filename)
+    return file_list
 
 if __name__ == '__main__':
     (parser,Args) = set_opt()
+    excel_type_list = [".xls", ".xlsx"]
+    xml_type_list = [".xml"]
+    output_file_path = 'output_file/'
 
     if parser.mode == 1:
         mode_1(parser)
     else:
         if os.path.isdir(parser.input_path): #文件夹
-            excel_file = get_excel_file(parser.input_path)
+            excel_file = get_file_file(parser.input_path , excel_type_list)
             for file_path in excel_file:
                 parser.input_path = file_path
                 mode_2(parser)
@@ -332,3 +358,12 @@ if __name__ == '__main__':
             mode_2(parser)
         else:
             print ("请检查输入的路径是否存在")
+
+    xml_file = get_file_file('output_file' , xml_type_list)
+    if len(xml_file) == 0:
+        print ("当前路径下无xml文件")
+        exit(0)
+    for file_path in xml_file:
+        del_empty_string(file_path)
+    print ("空字符已处理完成，请查看del_empty_string文件夹")
+
