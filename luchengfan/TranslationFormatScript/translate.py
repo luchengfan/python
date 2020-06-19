@@ -359,7 +359,7 @@ if __name__ == '__main__':
         else:
             print ("请检查输入的路径是否存在")
 
-    xml_file = get_file_file('output_file' , xml_type_list)
+    xml_file = get_file_file(output_file_path , xml_type_list)
     if len(xml_file) == 0:
         print ("当前路径下无xml文件")
         exit(0)
