@@ -3,6 +3,7 @@
 
 '''
 此功能为将TCON xml中所需要的的属性有Excel转化为xml
+excel表格第一行的密码为：cvte2020
 '''
 import xlrd
 import os
@@ -36,6 +37,9 @@ def import_excel(excel_tables):
     tables_list.pop(0) #删掉第一列的数据
 
 def excel_to_xml(num):
+    '''
+    将excel中的内容转化为xml文件输出
+    '''
     xml_path = output_folder + '/TCON'
     
     if tables_list[num]['板卡型号'] != '无':
@@ -53,7 +57,7 @@ def excel_to_xml(num):
     
     xml_path += '_' + tables_list[num]['CheckSum'] + '.xml'
 
-    tcon_xml = open(xml_path , "w" , encoding='utf8') # 文件读写方式是追加
+    tcon_xml = open(xml_path , "w" , encoding='utf8')
 
     add_xml.append('<?xml version="1.0" encoding="utf-8"?>')
     add_xml.append('<Root>')
@@ -74,6 +78,9 @@ def excel_to_xml(num):
     add_xml.clear()
 
 def run():
+    '''
+    执行excel转化为xml的操作
+    '''
     excel_file = file_text.get()
     data = xlrd.open_workbook(excel_file)
     sheet_table = data.sheets()[0] #读取excel表中的sheet1
@@ -85,7 +92,7 @@ def run():
         showinfo(title='提示', message='Excel中无数据，请检查')
     else:
         for i in range(0 , len(tables_list)):
-            if tables_list[i]['是否生成xml'] == '是':
+            if tables_list[i]['是否生成xml'] != '否':
                 excel_to_xml_num += 1
                 excel_to_xml(i)
         
