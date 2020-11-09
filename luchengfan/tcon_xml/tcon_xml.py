@@ -53,11 +53,11 @@ def excel_to_xml(num , folder_path):
     if tables_list[num]['配屏'] != '无':
         xml_path += '_' + tables_list[num]['配屏']
     if tables_list[num]['PMIC型号'] != '无':
-        xml_path += '_' + tables_list[num]['PMIC型号']
+        xml_path += '_PMIC_' + tables_list[num]['PMIC型号']
     if tables_list[num]['GAMMA型号'] != '无':
-        xml_path += '_' + tables_list[num]['GAMMA型号']
+        xml_path += '_GAMMA_' + tables_list[num]['GAMMA型号']
     if tables_list[num]['SOC型号'] != '无':
-        xml_path += '_' + tables_list[num]['SOC型号']
+        xml_path += '_SOC_' + tables_list[num]['SOC型号']
     
     xml_path += '_' + tables_list[num]['CheckSum'] + '.xml'
 
