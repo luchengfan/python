@@ -36,11 +36,15 @@ def import_excel(excel_tables):
 
     tables_list.pop(0) #删掉第一列的数据
 
-def excel_to_xml(num):
+def excel_to_xml(num , folder_path):
     '''
     将excel中的内容转化为xml文件输出
     '''
-    xml_path = output_folder + '/TCON'
+    xml_path = folder_path + output_folder
+    if not os.path.isdir(xml_path):
+        os.makedirs(xml_path)
+
+    xml_path += '/TCON'
     
     if tables_list[num]['板卡型号'] != '无':
         xml_path += '_' + tables_list[num]['板卡型号']
@@ -86,6 +90,9 @@ def run():
     sheet_table = data.sheets()[0] #读取excel表中的sheet1
     import_excel(sheet_table)
 
+    temp_path = excel_file.split(r'/')[-1] #获取excel的文件名
+    folder_path = excel_file.replace(temp_path , '')  #获取excel文件夹路径
+
     excel_to_xml_num = 0
 
     if len(tables_list) == 0:
@@ -94,12 +101,12 @@ def run():
         for i in range(0 , len(tables_list)):
             if tables_list[i]['是否生成xml'] != '否':
                 excel_to_xml_num += 1
-                excel_to_xml(i)
+                excel_to_xml(i , folder_path)
         
         if (excel_to_xml_num == 0):
             showinfo(title='提示', message='Excel中无需要生成xml的数据，请检查')
         else:
-            tip_message = str(excel_to_xml_num) + '条数据已转化，请查看' + output_folder + '文件夹下的xml文件'
+            tip_message = str(excel_to_xml_num) + '条数据已转化，请查看' + folder_path + output_folder + '文件夹下的xml文件'
             showinfo(title='提示', message=tip_message)
             frameT.quit()
 
@@ -120,8 +127,6 @@ if __name__ == "__main__":
 
     #xml输出的文件夹
     output_folder = "TCON_XML"
-    if not os.path.isdir(output_folder):
-        os.makedirs(output_folder)
 
     #可视化界面
     frameT = Tk()
