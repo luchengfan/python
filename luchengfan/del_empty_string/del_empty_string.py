@@ -8,7 +8,6 @@ def del_xml_empty_string(xml_file):
     '''
     删除xml文件中的空元素，例如:
     <string name="COUNTRY_SG_LOCK_INFO_7" />
-    " />
     '''
     input_file = open(xml_file ,'r' , encoding="utf-8")
 
