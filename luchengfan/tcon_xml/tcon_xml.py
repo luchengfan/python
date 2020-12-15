@@ -118,10 +118,11 @@ def excel_to_xml(num , folder_path):
         return 0
 
     #判断主芯片SVN数据的有效性
-    SVN_number = str(int(tables_list[num]['主芯片SVN']))
-    if valid_data(SVN_number):
+    SVN_number = tables_list[num]['主芯片SVN']
+    if (str.isdigit(SVN_number)):
+        SVN_number = int(tables_list[num]['主芯片SVN'])
         xml_path += '_svn' + str(SVN_number)
-    else:
+    elif valid_data(SVN_number):
         showinfo(title='提示', message='主芯片SVN数据不符合要求，请检查')
         return 0
 
