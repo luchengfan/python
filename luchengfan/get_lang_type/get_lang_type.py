@@ -5,12 +5,37 @@ import xlwt
 from xlutils.copy import copy
 from openpyxl import *
 
-def get_language_type(excel_file):
-    input_in_title = []
-    input_not_in_title = []
-    table_list = []
-    lang_type_num = []
+def check_language_type():
+    '''
+    检测输入的语言是否在excel中
+    '''
+    for lang_type in get_lang_type_list:
+        for excel_title_content in excel_title:
+            if lang_type in excel_title_content:
+                input_in_title.append(lang_type)
 
+    input_not_in_title = [item for item in get_lang_type_list if item not in input_in_title]
+
+    if len(input_not_in_title) != 0:
+        print(input_not_in_title , "不在语言列表中，请确认是否输入错误")
+        exit(0)
+
+def get_language_type_number():
+    '''
+    将输入的语言转化为excel表中的列数
+    '''
+    lang_type_num.append(0)
+    lang_type_num.append(1)
+    for input_type in input_in_title:
+        for i in range(0 , len(excel_title)):
+            if input_type in excel_title[i]:
+                if ((i != 0) and (i != 1)):
+                    lang_type_num.append(i)
+
+def get_output_file(excel_file):
+    '''
+    设置输出的文件
+    '''
     excel_filename = excel_file.split(r'/')[-1] #获取excel的文件名
     excel_folder_path = excel_file.replace(excel_filename , '')  #获取excel文件夹路径
 
@@ -24,8 +49,17 @@ def get_language_type(excel_file):
 
     output_file = get_language_type_file + excel_filename
 
+    return output_file
+
+def get_language_type(excel_file):
+    input_not_in_title = []
+    table_list = []
+    styleRedBkg = xlwt.easyxf('pattern: pattern solid, fore_colour red;')  # 红色
+
     data = xlrd.open_workbook(excel_file , formatting_info=True)
     sheet_table = data.sheets()[0] #读取excel表中的sheet1
+
+    lang_output_file = get_output_file(excel_file)
 
     old_content = copy(data)
     ws = old_content.get_sheet(0)
@@ -33,22 +67,8 @@ def get_language_type(excel_file):
     for col in range(sheet_table.ncols): #列
         excel_title.append(sheet_table.cell(0,col).value)
 
-    for lang_type in get_lang_type_list:
-        for excel_title_content in excel_title:
-            if lang_type in excel_title_content:
-                input_in_title.append(lang_type)
-
-    input_not_in_title = [item for item in get_lang_type_list if item not in input_in_title]
-
-    if len(input_not_in_title) != 0:
-        print(input_not_in_title , "不在语言列表中，请确认是否输入错误")
-        exit(0)
-
-    lang_type_num.append(0)
-    for input_type in input_in_title:
-        for i in range(0 , len(excel_title)):
-            if input_type in excel_title[i]:
-                lang_type_num.append(i)
+    check_language_type()
+    get_language_type_number()
 
     for row in range(sheet_table.nrows): #行
         for col in range(sheet_table.ncols): #列
@@ -58,9 +78,12 @@ def get_language_type(excel_file):
         col_num = 0
         for col in range(sheet_table.ncols): #列
             if col in lang_type_num:
-                ws.write(row , col_num , sheet_table.cell(row,col).value)
+                if sheet_table.cell(row,col).value != "":
+                    ws.write(row , col_num , sheet_table.cell(row,col).value)
+                else:
+                    ws.write(row , col_num , sheet_table.cell(row,col).value , styleRedBkg)
                 col_num += 1
-            old_content.save(output_file)
+            old_content.save(lang_output_file)
 
 def get_file(excel_file_path):
     '''
@@ -80,10 +103,13 @@ def get_file(excel_file_path):
 
 if __name__ == "__main__":
     get_excel_file = input("请输入处理的文件或文件夹：")
-    get_lang_type = input("请输入要保留的语言，以'_'区分，例如：English_Thai_Russian：")
+    get_lang_type = "values-es_values-it_values-ar"#input("请输入要保留的语言(Excel第一行,默认会保留英语)，以'_'区分，例如：values-es_values-it_values-ar：")
     get_lang_type_list = get_lang_type.split("_")
     
     excel_title = []
+    input_in_title = []
+    lang_type_num = []
+
     is_dir = False
 
     if os.path.isdir(get_excel_file): #文件夹
