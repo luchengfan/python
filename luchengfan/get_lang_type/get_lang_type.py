@@ -62,8 +62,6 @@ def get_language_type(excel_file):
 
     lang_output_file = get_output_file(excel_file)
 
-    #old_content = copy(data)
-    #ws = old_content.get_sheet(0)
     wb=xlwt.Workbook()   #新建一个excel文件
     ws=wb.add_sheet('translate')   #新增一个表格，并且取名translate
 
@@ -104,7 +102,7 @@ def get_file(excel_file_path):
 
 if __name__ == "__main__":
     get_excel_file = input("请输入处理的文件或文件夹：")
-    get_lang_type = "values-es_values-it_values-ar"#input("请输入要保留的语言(Excel第一行,默认会保留英语)，以'_'区分，例如：values-es_values-it_values-ar：")
+    get_lang_type = input("请输入要保留的语言(Excel第一行,默认会保留英语)，以'_'区分，例如：values-es_values-it_values-ar：")
     get_lang_type_list = get_lang_type.split("_")
     
     excel_title = []
