@@ -52,6 +52,7 @@ def get_output_file(excel_file):
     return output_file
 
 def get_language_type(excel_file):
+    print(excel_file , "开始处理！")
     input_not_in_title = []
     table_list = []
     styleRedBkg = xlwt.easyxf('pattern: pattern solid, fore_colour red;')  # 红色
@@ -61,18 +62,16 @@ def get_language_type(excel_file):
 
     lang_output_file = get_output_file(excel_file)
 
-    old_content = copy(data)
-    ws = old_content.get_sheet(0)
+    #old_content = copy(data)
+    #ws = old_content.get_sheet(0)
+    wb=xlwt.Workbook()   #新建一个excel文件
+    ws=wb.add_sheet('translate')   #新增一个表格，并且取名translate
 
     for col in range(sheet_table.ncols): #列
         excel_title.append(sheet_table.cell(0,col).value)
 
     check_language_type()
     get_language_type_number()
-
-    for row in range(sheet_table.nrows): #行
-        for col in range(sheet_table.ncols): #列
-            ws.write(row , col , "")
 
     for row in range(sheet_table.nrows): #行
         col_num = 0
@@ -83,7 +82,9 @@ def get_language_type(excel_file):
                 else:
                     ws.write(row , col_num , sheet_table.cell(row,col).value , styleRedBkg)
                 col_num += 1
-            old_content.save(lang_output_file)
+            wb.save(lang_output_file)
+
+    print(excel_file , "处理完成！")
 
 def get_file(excel_file_path):
     '''
