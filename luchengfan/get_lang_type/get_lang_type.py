@@ -120,6 +120,7 @@ if __name__ == "__main__":
         else:
             for file_path in get_language_type_file:
                 get_language_type(file_path)
+            print ("文件已处理完成，请查看get_language_type文件夹！")
     elif os.path.isfile(get_excel_file): #文件
         if (get_excel_file.endswith(".xls") or get_excel_file.endswith(".xlsx")):
             is_dir = False
