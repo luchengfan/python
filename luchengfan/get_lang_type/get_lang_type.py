@@ -3,7 +3,6 @@ import os
 import xlrd
 import xlwt
 from xlutils.copy import copy
-from openpyxl import *
 
 def check_language_type():
     '''
