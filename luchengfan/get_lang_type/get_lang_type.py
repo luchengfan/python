@@ -21,7 +21,7 @@ def check_language_type():
 
 def get_language_type_number():
     '''
-    将输入的语言转化为excel表中的列数
+    将输入的语言转化为excel表中的列数。默认保留第一列和第二列
     '''
     lang_type_num.append(0)
     lang_type_num.append(1)
