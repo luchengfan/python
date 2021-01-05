@@ -16,25 +16,26 @@ def import_excel(excel_tables):
     打开excel表格，将excel表格内容导入到tables_list列表中
     '''
     for rown in range(excel_tables.nrows):
-        array = {'是否生成xml':'' , '位号':'' , '板卡型号':'' , '配屏':'' , '输入信号':'' , '分辨率':'' , 'PMIC型号':'' , 'GAMMA型号':'' , 'SOC型号':'' , 'FLASH型号':'' , 'FlashSize':'' , '烧录需求':'' , 'CheckSum':'' , '特殊需求':'' , '日期':'' , '主芯片SVN':'' , '客制化':''}
+        array = {'是否生成xml':'' , '类型':'' , '位号':'' , '板卡型号':'' , '配屏':'' , '输入信号':'' , '分辨率':'' , 'PMIC型号':'' , 'GAMMA型号':'' , 'SOC型号':'' , 'FLASH型号':'' , 'FlashSize':'' , '烧录需求':'' , 'CheckSum':'' , '特殊需求':'' , '日期':'' , '主芯片SVN':'' , '客制化':''}
 
         array['是否生成xml'] = excel_tables.cell_value(rown,0)
-        array['位号'] = excel_tables.cell_value(rown,1)
-        array['板卡型号'] = excel_tables.cell_value(rown,2)
-        array['配屏'] = excel_tables.cell_value(rown,3)
-        array['输入信号'] = excel_tables.cell_value(rown,4)
-        array['分辨率'] = excel_tables.cell_value(rown,5)
-        array['PMIC型号'] = excel_tables.cell_value(rown,6)
-        array['GAMMA型号'] = excel_tables.cell_value(rown,7)
-        array['SOC型号'] = excel_tables.cell_value(rown,8)
-        array['FLASH型号'] = excel_tables.cell_value(rown,9)
-        array['FlashSize'] = excel_tables.cell_value(rown,10)
-        array['烧录需求'] = excel_tables.cell_value(rown,11)
-        array['CheckSum'] = excel_tables.cell_value(rown,12)
-        array['特殊需求'] = excel_tables.cell_value(rown,13)
-        array['日期'] = excel_tables.cell_value(rown,14)
-        array['主芯片SVN'] = excel_tables.cell_value(rown,15)
-        array['客制化'] = excel_tables.cell_value(rown,16)
+        array['类型'] = excel_tables.cell_value(rown,1)
+        array['位号'] = excel_tables.cell_value(rown,2)
+        array['板卡型号'] = excel_tables.cell_value(rown,3)
+        array['配屏'] = excel_tables.cell_value(rown,4)
+        array['输入信号'] = excel_tables.cell_value(rown,5)
+        array['分辨率'] = excel_tables.cell_value(rown,6)
+        array['PMIC型号'] = excel_tables.cell_value(rown,7)
+        array['GAMMA型号'] = excel_tables.cell_value(rown,8)
+        array['SOC型号'] = excel_tables.cell_value(rown,9)
+        array['FLASH型号'] = excel_tables.cell_value(rown,10)
+        array['FlashSize'] = excel_tables.cell_value(rown,11)
+        array['烧录需求'] = excel_tables.cell_value(rown,12)
+        array['CheckSum'] = excel_tables.cell_value(rown,13)
+        array['特殊需求'] = excel_tables.cell_value(rown,14)
+        array['日期'] = excel_tables.cell_value(rown,15)
+        array['主芯片SVN'] = excel_tables.cell_value(rown,16)
+        array['客制化'] = excel_tables.cell_value(rown,17)
         tables_list.append(array)
 
     tables_list.pop(0) #删掉第一列的数据
@@ -100,7 +101,10 @@ def excel_to_xml(num , folder_path):
     elif valid_data(tables_list[num]['GAMMA型号']):
         xml_path += '_GAMMA_' + tables_list[num]['GAMMA型号']
     elif valid_data(tables_list[num]['SOC型号']):
-        xml_path += '_SOC_' + tables_list[num]['SOC型号']
+        if tables_list[num]['类型'] == 'LeveShift':
+            xml_path += '_LeveShift_' + tables_list[num]['SOC型号']
+        else:
+            xml_path += '_SOC_' + tables_list[num]['SOC型号']
 
     #判断输入信号数据的有效性
     if ((not valid_data(tables_list[num]['CheckSum'])) 
