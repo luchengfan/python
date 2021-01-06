@@ -7,7 +7,6 @@
 import xlrd
 import xlwt
 import os
-import xlwings as xw
 from tkinter import *
 from tkinter.filedialog import askopenfilename
 from tkinter.messagebox import showinfo
@@ -31,7 +30,7 @@ def result_check(result):
 
 def get_answerer_name(excel_tables):
     '''
-    获取答题人的信命，即Excel中的'答题人'
+    获取答题人的姓名，即Excel中的'答题人'
     '''
     answerer_list = []
 
