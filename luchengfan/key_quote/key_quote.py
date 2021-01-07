@@ -212,9 +212,9 @@ def others_evaluation(excel_tables):
         dict_others_assist[others_name] = result_statistics(excel_tables , others_name , num*4 + 2 , '协作与及时性')
         dict_others_improve[others_name] = result_statistics(excel_tables , others_name , num*4 + 3 , '问题改善与推动')
 
-def save_to_excel(excel_tables):
+def save_to_excel(excel_tables , path):
     #关键举证输出的文件
-    output_file = "关键举证.xls"
+    output_file = path + "关键举证.xls"
 
     styleRedBkg = xlwt.easyxf('pattern: pattern solid, fore_colour red;')  # 红色
 
@@ -303,8 +303,11 @@ def get_key_quote():
     data = xlrd.open_workbook(excel_file)
     sheet_table = data.sheets()[0] #读取excel表中的sheet1
 
+    temp_path = excel_file.split(r'/')[-1] #获取excel的文件名
+    folder_path = excel_file.replace(temp_path , '')  #获取excel文件夹路径
+
     dict_self_assessment(sheet_table)
-    save_to_excel(sheet_table)
+    save_to_excel(sheet_table , folder_path)
 
 def fileopen():
     '''
