@@ -216,14 +216,14 @@ def save_to_excel(excel_tables , path):
     #关键举证输出的文件
     output_file = path + "关键举证.xls"
 
+    if os.path.exists(output_file):
+        os.remove(output_file)
+
     styleRedBkg = xlwt.easyxf('pattern: pattern solid, fore_colour red;')  # 红色
 
     others_evaluation(excel_tables) #他评
     assessed_name = get_assessed_name(excel_tables)
     answerer_department = get_answerer(excel_tables)
-
-    if os.path.exists(output_file):
-        os.remove(output_file)
 
     style =  xlwt.XFStyle()   #赋值style为XFStyle()，初始化样式    
 
