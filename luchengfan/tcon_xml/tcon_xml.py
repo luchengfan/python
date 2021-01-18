@@ -90,11 +90,12 @@ def excel_to_xml(num , folder_path):
         return 0
  
     #判断输入信号数据的有效性
-    if valid_data(tables_list[num]['输入信号']):
-        xml_path += '_' + tables_list[num]['输入信号']
-    else:
-        showinfo(title='提示', message='输入信号数据不符合要求，请检查')
-        return 0
+    if tables_list[num]['类型'] != '半TCON':
+        if valid_data(tables_list[num]['输入信号']):
+            xml_path += '_' + tables_list[num]['输入信号']
+        else:
+            showinfo(title='提示', message='输入信号数据不符合要求，请检查')
+            return 0
 
     if valid_data(tables_list[num]['PMIC型号']):
         xml_path += '_PMIC_' + tables_list[num]['PMIC型号']
@@ -106,7 +107,7 @@ def excel_to_xml(num , folder_path):
         else:
             xml_path += '_SOC_' + tables_list[num]['SOC型号']
 
-    #判断输入信号数据的有效性
+    #判断CheckSum数据的有效性
     if ((not valid_data(tables_list[num]['CheckSum'])) 
          or ('0x' not in tables_list[num]['CheckSum'])):
         showinfo(title='提示', message='CheckSum数据不符合要求(需以0x开头)，请检查')
