@@ -97,6 +97,7 @@ def excel_to_xml(num , folder_path):
             showinfo(title='提示', message='输入信号数据不符合要求，请检查')
             return 0
 
+    #输入PMIC型号、GAMMA型号、SOC型号
     if valid_data(tables_list[num]['PMIC型号']):
         xml_path += '_PMIC_' + tables_list[num]['PMIC型号']
     elif valid_data(tables_list[num]['GAMMA型号']):
@@ -144,6 +145,10 @@ def excel_to_xml(num , folder_path):
     add_xml.append('<Root>')
     add_xml.append(' '*4 + '<Confirmation>')
     add_xml.append(' '*8 + '<SW_Items>')
+
+    if valid_data(tables_list[num]['SOC型号']):
+        add_xml.append(' '*12 + '<Attr Name="SW_CheckSum" Alias="SW_CheckSum" Ids="0" Atoms="' + tables_list[num]['日期'] + '"/>')
+        #add_xml.append(' '*12 + '<Attr Name="SW_VersionBarInfo" Alias="SW_VersionBarInfo" Ids="0" Atoms="' + tables_list[num]['日期'] + '"/>')
 
     for key,value in dict_Attribute.items():
         add_xml.append(' '*12 + '<Attr Name="' + value + '" Alias="' + value + '" Ids="0" Atoms="' + tables_list[num][key] + '"/>')
@@ -201,7 +206,7 @@ if __name__ == "__main__":
     tables_list = []  #创建一个空列表，存储Excel的数据
     add_xml = []  #创建一个空列表，用来存储xml中的内容
 
-    dict_Attribute = {'板卡型号':'SW_Chipset' , '配屏':'SW_Panel' , '分辨率':'SW_PanelResolution' , 'PMIC型号':'SW_PMICType' , 'GAMMA型号':'SW_GAMMAType' , 'SOC型号':'SW_SOCType' , 'FLASH型号':'SW_FlashType' , 'FlashSize':'SW_FlashSize' , '烧录需求':'SW_CvteFactoryKey' , 'CheckSum':'SW_CheckSum' , '特殊需求':'SW_SpecialDemand'}
+    dict_Attribute = {'板卡型号':'SW_Chipset' , '配屏':'SW_Panel' , '分辨率':'SW_PanelResolution' , 'PMIC型号':'SW_PMICType' , 'GAMMA型号':'SW_GAMMAType' , 'SOC型号':'SW_SOCType' , 'FLASH型号':'SW_FlashType' , 'FlashSize':'SW_FlashSize' , '烧录需求':'SW_CvteFactoryKey' , '特殊需求':'SW_SpecialDemand'}
 
     #xml输出的文件夹
     output_folder = "TCON_XML"
