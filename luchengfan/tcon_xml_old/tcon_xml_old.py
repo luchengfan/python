@@ -15,7 +15,11 @@ def run():
         file_text.set('') #清除文件内容
         return 0
 
-    xml_path = SOC_filename + '.xml'
+    file_path = r'C:\Users\user\Desktop'
+    if not os.path.exists(file_path):
+        file_path = r'D:'
+
+    xml_path = file_path + '\\' + SOC_filename + '.xml'
 
     checksum_ymd = SOC_filename.split('_')[-2] #年、月、日
     checksum_hm = SOC_filename.split('_')[-1] #时、分
