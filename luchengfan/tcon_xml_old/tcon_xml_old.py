@@ -8,7 +8,7 @@ from tkinter.messagebox import showinfo
 def run():
     SOC_filename = file_text.get()
     if '.bin' in SOC_filename:
-        SOC_filename = SOC_filename.rstrip('.bin')
+        SOC_filename = SOC_filename.strip().rstrip('.bin')
 
     if 'SOC' not in SOC_filename:
         showinfo(title='提示', message='请使用SOC软件生成xml')
@@ -52,7 +52,7 @@ if __name__ == "__main__":
 
     file_text = StringVar()
 
-    ent = Entry(frame,width=50,textvariable=file_text).pack(fill=X,side=LEFT) #X方向填充，靠左
+    ent = Entry(frame,width=100,textvariable=file_text).pack(fill=X,side=LEFT) #X方向填充，靠左
     ext = Button(frame1,width=10,text='开始',font=('宋体',14),command=run).pack(fill=X,side=LEFT)
     etb = Button(frame1,width=10,text='退出',font=('宋体',14),command=frameT.quit).pack(fill=Y,padx=10)
     frameT.mainloop()
