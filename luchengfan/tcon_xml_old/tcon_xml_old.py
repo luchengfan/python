@@ -7,8 +7,10 @@ from tkinter.messagebox import showinfo
 
 def run():
     SOC_filename = file_text.get()
+    SOC_filename = SOC_filename.strip()
+
     if '.bin' in SOC_filename:
-        SOC_filename = SOC_filename.strip().rstrip('.bin')
+        SOC_filename = SOC_filename.rstrip('.bin')
 
     if 'SOC' not in SOC_filename:
         showinfo(title='提示', message='请使用SOC软件生成xml')
