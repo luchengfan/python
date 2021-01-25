@@ -7,6 +7,7 @@ excel表格第一行的密码为：cvte2020
 '''
 import xlrd
 import os
+import re
 from tkinter import *
 from tkinter.filedialog import askopenfilename
 from tkinter.messagebox import showinfo
@@ -40,12 +41,23 @@ def import_excel(excel_tables):
 
     tables_list.pop(0) #删掉第一列的数据
 
+def Contains_Chinese_char(check_str):
+    '''
+    判断字符串中是否包含汉字
+    str：需要检查的字符串。0代表没有汉字，1代表有汉字
+    '''
+    chmodel = re.compile(u'[\u4e00-\u9fa5]')  #检查中文
+    if (chmodel.search(check_str)):
+        return 1
+    else:
+        return 0
+
 def valid_data(data):
     '''
     判断当前的数据是否有效，当为空或者"无"时判断为无效数据
     如果是有效数据则返回true，如果是无效数据则返回false
     '''
-    if ((data.isspace()) or (len(data) == 0) or (data == "无")):
+    if ((data.isspace()) or (len(data) == 0) or (data == "无") or ("/" in data) or (r"\\" in data)):
         return 0
     else:
         return 1
@@ -135,7 +147,11 @@ def excel_to_xml(num , folder_path):
 
     #判断输入信号数据的有效性
     if valid_data(tables_list[num]['客制化']):
-        xml_path += '_' + tables_list[num]['客制化']
+        if Contains_Chinese_char(tables_list[num]['客制化']):
+            showinfo(title='提示', message='客制化信息中存在中文，请检查\n如果是公版此信息可以为空或者使用COMMON')
+            return 0
+        else:
+            xml_path += '_' + tables_list[num]['客制化']
 
     xml_path += '.xml'
 
