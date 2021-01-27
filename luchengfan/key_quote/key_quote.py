@@ -25,13 +25,13 @@ def result_check(result , col_num , row_num):
         if result_str in result_range:
             return result_str
         else:
-            message_tips = '第' + str(col_num) + '行，第' + str(row_num) + '列填写的值不在范围内(A/B/C/D)，请检查并修改！'
+            message_tips = '第 ' + str(col_num) + ' 行，第 ' + str(row_num) + ' 列填写的值不在范围内(A/B/C/D)，请检查并修改！'
             showinfo(title='提示', message=message_tips)
             sys.exit(0)
     elif (len(result_str) == 0):
         return 'D'
     else:
-        message_tips ='第' + str(col_num) + '行，第' + str(row_num) + '列数据异常，请检查并修改！'
+        message_tips ='第 ' + str(col_num) + ' 行，第 ' + str(row_num) + ' 列数据异常，请检查并修改！'
         showinfo(title='提示', message=message_tips)
         sys.exit(0)
 
