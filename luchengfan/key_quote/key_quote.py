@@ -11,22 +11,29 @@ from tkinter import *
 from tkinter.filedialog import askopenfilename
 from tkinter.messagebox import showinfo
 
-def result_check(result):
+def result_check(result , col_num , row_num):
     '''
     建议自评和他评的结果：1、去掉空格；2、全部转化为大写；3、如果输入了多个字母则提示报错
     ''' 
     result_str = result.strip().upper()
     result_range = ['A' , 'B' , 'C' , 'D']
+    message_tips = ''
+    col_num += 1
+    row_num += 1
 
     if (len(result_str) == 1):
         if result_str in result_range:
             return result_str
         else:
-            showinfo(title='提示', message='填写的值不在范围内，请检查！')
-            return 0
+            message_tips = '第' + str(col_num) + '行，第' + str(row_num) + '列填写的值不在范围内(A/B/C/D)，请检查并修改！'
+            showinfo(title='提示', message=message_tips)
+            sys.exit(0)
+    elif (len(result_str) == 0):
+        return 'D'
     else:
-        showinfo(title='提示', message='结果输入错误，请检查！')
-        return 0
+        message_tips ='第' + str(col_num) + '行，第' + str(row_num) + '列数据异常，请检查并修改！'
+        showinfo(title='提示', message=message_tips)
+        sys.exit(0)
 
 def get_answerer_name(excel_tables):
     '''
@@ -115,10 +122,10 @@ def dict_self_assessment(excel_tables):
         if assessment_name in answerer_name:
             answerer_rown_num = int(dict_to_str(dic_answerer_rown[assessment_name]))
 
-            dict_self_requirement[assessment_name] = result_check(excel_tables.cell_value(answerer_rown_num , num*4))
-            dict_self_satisfaction[assessment_name] = result_check(excel_tables.cell_value(answerer_rown_num , num*4 + 1))
-            dict_self_assist[assessment_name] = result_check(excel_tables.cell_value(answerer_rown_num , num*4 + 2))
-            dict_self_improve[assessment_name] = result_check(excel_tables.cell_value(answerer_rown_num , num*4 + 3))
+            dict_self_requirement[assessment_name] = result_check(excel_tables.cell_value(answerer_rown_num , num*4) , answerer_rown_num , num*4)
+            dict_self_satisfaction[assessment_name] = result_check(excel_tables.cell_value(answerer_rown_num , num*4 + 1) , answerer_rown_num , num*4 + 1)
+            dict_self_assist[assessment_name] = result_check(excel_tables.cell_value(answerer_rown_num , num*4 + 2) , answerer_rown_num , num*4 + 2)
+            dict_self_improve[assessment_name] = result_check(excel_tables.cell_value(answerer_rown_num , num*4 + 3) , answerer_rown_num , num*4 + 3)
 
 def self_assessment(excel_tables , name , key_dime):
     '''
@@ -160,7 +167,7 @@ def result_statistics(excel_tables , name , result_num , key_dime):
     str_D_num = 0
 
     for i in range(appraise_num):
-        get_result_level = result_check(excel_tables.cell_value(i + 4 , result_num))
+        get_result_level = result_check(excel_tables.cell_value(i + 4 , result_num) , i + 4 , result_num)
         if get_result_level == 'A':
             str_A_num += 1
         elif get_result_level == 'B':
