@@ -310,6 +310,14 @@ def get_key_quote():
     data = xlrd.open_workbook(excel_file)
     sheet_table = data.sheets()[0] #读取excel表中的sheet1
 
+    answerer_name = get_answerer_name(sheet_table) #获取答题人的姓名
+    assessed_name = get_assessed_name(sheet_table) #被评价的姓名
+
+    #在答题人列表中而不在被评价列表中
+    leave_people = [x for x in answerer_name if x not in assessed_name]
+    if len(leave_people) != 0:
+        showinfo(title='提示', message=''.join(leave_people) + ' 不在被评价者中，请检查生成的结果是否正确\n如不正确请检查姓名后重试')
+
     temp_path = excel_file.split(r'/')[-1] #获取excel的文件名
     folder_path = excel_file.replace(temp_path , '')  #获取excel文件夹路径
 
