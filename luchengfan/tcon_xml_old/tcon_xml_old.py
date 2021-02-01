@@ -12,11 +12,6 @@ def run():
     if '.bin' in SOC_filename:
         SOC_filename = SOC_filename.rstrip('.bin')
 
-    if 'SOC' not in SOC_filename:
-        showinfo(title='提示', message='请使用SOC软件生成xml')
-        file_text.set('') #清除文件内容
-        return 0
-
     file_path = r'C:\Users\user\Desktop'
     if not os.path.exists(file_path):
         file_path = r'D:'
